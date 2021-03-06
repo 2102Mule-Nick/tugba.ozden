@@ -22,7 +22,7 @@ public class Welcome implements Menu {
 		// TODO Auto-generated constructor stub
 	}
 
-	public Welcome(Menu login, Menu registration, Menu chatting) {
+	public Welcome(Menu login, Menu registration) {
 		super();
 		this.login = login;
 		this.registration = registration;
@@ -36,18 +36,28 @@ public class Welcome implements Menu {
 
 	@Override
 	public void displayOptions() {
-		System.out.println("Welcome to CHAT");
+		System.out.println("*************************************************************************");
+		System.out.println("***** THIS CHATTING IS CREATED FOR IMPROVING BASIC ENGLISH SKILLS. *****");
+		System.out.println("*****                                                              *****");
+		System.out.println("*****               WELCOME TO OUR CHATTING PROGRAM                *****");
+		System.out.println("*****                                                              *****");
+		System.out.println("*************************************************************************");
+		//System.out.println("Welcome to Chating");
+		System.out.println("*************************************************************************");
 		System.out.println("Would you like to login or register?");
-		System.out.println("login");
-		System.out.println("register");
+		System.out.println("If you want to do login type 1 or register type 2 : ");
+		System.out.println("*************************************************************************");
+		//System.out.println("register");
 		String answer = scan.nextLine();
 		
-		if ("login".equals(answer)) {
+		if ("1".equals(answer)) {
 			nextM= login;
-		} else if ("register".equals(answer)) {
+		} else if ("2".equals(answer)) {
 			nextM= registration;
 		} else {
-			System.out.println("invalid input");			
+			System.out.println("invalid input! ");
+			System.out.println("*************************************************************************");
+			System.out.println("If you want to do login type 1 or register type 2 : ");
 			nextM= this;
 		}
 		
@@ -67,7 +77,7 @@ public class Welcome implements Menu {
 
 	@Override
 	public void setScanner(Scanner scan) {
-		// TODO Auto-generated method stub
+		 this.scan=scan;
 		
 	}
 

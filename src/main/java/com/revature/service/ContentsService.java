@@ -7,8 +7,8 @@ import com.revature.pojo.Contents;
 
 public interface ContentsService {
 	
-	public boolean takingInput( Contents contents);
+	public boolean takingInput( String string);
 	
-	public Contents answering(Contents contents);
+	public String answering(String string);
 
 }

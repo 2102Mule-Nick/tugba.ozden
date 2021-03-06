@@ -29,7 +29,7 @@ public class Driver {
 		 
 		//Menu logout=new Logout(authorizeService);
 		
-		Menu welcome = new Welcome(login, register,chatting);		
+		Menu welcome = new Welcome(login, register);		
 		
 		((Registration) register).setWelcome(welcome);
 		
@@ -41,7 +41,7 @@ public class Driver {
 		
 		welcome.setScanner(scan);
 		
-		//logout.setScanner(scan);
+		//logout.setScanner(scan)
 		
 		chatting.setScanner(scan);
 		
@@ -53,7 +53,7 @@ public class Driver {
 			nextM = nextM.advance();
 			
 		} while (nextM != null);
-		System.out.println("....");
+		//System.out.println("....");
 		nextM=chatting;
 		do {			
 			nextM.answeringToUser();

@@ -12,8 +12,16 @@ import com.revature.service.ContentsService;
 public class Login implements Menu {
 	private AuthorizeService authorizeService;
 	private ContentsService contentsService;
-	Scanner scan=new Scanner(System.in);		
+	private Scanner scan;		
 	
+
+	public Scanner getScan() {
+		return scan;
+	}
+
+	public void setScan(Scanner scan) {
+		this.scan = scan;
+	}
 
 	public Login() {
 		super();
@@ -25,27 +33,13 @@ public class Login implements Menu {
 		this.authorizeService = authorizeService;
 	}
 
-	public Login(AuthorizeService authorizeService, Scanner scan) {
-		super();
-		this.authorizeService = authorizeService;
-		this.scan = scan;
-	}
-
 	public AuthorizeService getAuthorizeService() {
 		return authorizeService;
 	}
 
 	public void setAuthorizeService(AuthorizeService authorizeService) {
 		this.authorizeService = authorizeService;
-	}
-
-	public Scanner getScan() {
-		return scan;
-	}
-
-	public void setScan(Scanner scan) {
-		this.scan = scan;
-	}
+	}	
 	
 	public ContentsService getContentsService() {
 		return contentsService;
@@ -76,6 +70,7 @@ public class Login implements Menu {
 		
 		try {
 			authorizeService.authUser(user);
+			System.out.println("Login is happend succsesfully!");
 			System.out.println("Welcome to Chat " + user.getUserName());
 			//answeringToUser();
 			
@@ -102,17 +97,13 @@ public class Login implements Menu {
 	@Override
 	public Scanner getScanner() {
 		// TODO Auto-generated method stub
-		return null;
+		return scan;
 	}
 
 	@Override
 	public void setScanner(Scanner scan) {
-		// TODO Auto-generated method stub
+		this.scan=scan;
 		
-	}
-
-	
-
-	
+	}	
 
 }

@@ -16,6 +16,6 @@ public interface Menu {
 	
 	public void answeringToUser();
 	
-	//public void chatting();
+	//public Menu chatting();
 
 }

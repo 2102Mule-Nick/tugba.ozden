@@ -4,12 +4,10 @@ import java.util.List;
 import java.util.Scanner;
 
 public class Contents {
-	Scanner scan= new Scanner(System.in);
+	//Scanner scan= new Scanner(System.in);
 	private String userInput;
-	private String machineAnswer;
-	
-	private List<String> inputs;
-	
+	private String machineAnswer;	
+	private List<String> inputs;	
 	private List<String> answers;
 	
 	public String getContentsCategory() {

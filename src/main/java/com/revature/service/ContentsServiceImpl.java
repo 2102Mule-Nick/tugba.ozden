@@ -21,9 +21,9 @@ public class ContentsServiceImpl implements ContentsService {
 	
 
 	@Override
-	public boolean takingInput(Contents contents) {	
+	public boolean takingInput(String input) {	
 		
-		if(contentsDao.getAnswerByInput(contents)!=null) {		
+		if(contentsDao.getAnswerByInput(input)!=null) {		
 				return true;
 	}return false;
 	}
@@ -39,13 +39,13 @@ public class ContentsServiceImpl implements ContentsService {
 		throw new InvalidPassword();
 	}*/
 	@Override
-	public Contents answering(Contents contents) {
+	public String answering(String  input) {	
 		
-		Contents existingContents=contentsDao.getAnswerByInput(contents);
+		String existingContents=contentsDao.getAnswerByInput(input);
 		
-		//if(existingContents.getUserInput()!=null)  
+		if(input!=null) return existingContents; 
 			
-		return existingContents;	
+		else return "Please enter your answer!"	;
 		
 		 
 	}

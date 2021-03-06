@@ -12,25 +12,21 @@ public class Registration implements Menu{
 
 	private Menu next;
 	
-	Scanner scan=new Scanner(System.in);
+	private Scanner scan;
 
 	private AuthorizeService authorizeService;
 
 	public Registration() {
 		super();
 		// TODO Auto-generated constructor stub
-	}
-	
-	
+	}	
 
 	public Registration(Menu welcome, AuthorizeService authorizeService) {
 		super();
 		this.welcome = welcome;
 		this.authorizeService = authorizeService;
 	}
-
-
-
+	
 	@Override
 	public Menu advance() {
 		// TODO Auto-generated method stub
@@ -99,18 +95,14 @@ public class Registration implements Menu{
 
 	@Override
 	public Scanner getScanner() {
-		// TODO Auto-generated method stub
-		return null;
+		return scan;
 	}
 
 	@Override
 	public void setScanner(Scanner scan) {
-		// TODO Auto-generated method stub
+		this.scan=scan;
 		
 	}
-
-
-
 	@Override
 	public void answeringToUser() {
 		// TODO Auto-generated method stub

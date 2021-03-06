@@ -59,7 +59,7 @@ public class DriverTest {
 		Contents contents= new Contents();
 		
 		//Act
-		c.getAnswerByInput(new Contents("What can I do for you?"));
+		c.getAnswerByInput("What can I do for you?");
 		
 		//Assert
 		assertEquals("Contents should have 1 item in it", 1, contents.getAnswers().size());

@@ -1,5 +1,6 @@
 package com.revature.dao;
 
+import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
@@ -25,19 +26,14 @@ public class UserDaoKryo implements UserDao {
 	
 	private static final String FILE_EXTENSION = ".txt";
 
-	public UserDaoKryo() {
-		super();
-		kryo.register(User.class);
-	}
-
 	@Override
 	public void createUser(User user) throws UserNameTaken {
-		log.info("Starting to create user");
-		String fileName=FOLDER_NAME + user.getUserName() + FILE_EXTENSION;
 		
-		try(FileOutputStream outputStream = new FileOutputStream(fileName)) {
+		log.info("Starting to create user");
+		
+		try(FileOutputStream outputStream = new FileOutputStream(FOLDER_NAME + user.getUserName() + FILE_EXTENSION)) {
 			Output output = new Output(outputStream);
-			kryo.writeObject(output, user.getUserName());
+			kryo.writeObject(output, user);
 			output.close();
 		} catch (FileNotFoundException e) {
 			log.error("could not open file", e);
@@ -45,10 +41,29 @@ public class UserDaoKryo implements UserDao {
 			e.printStackTrace();
 		}
 		
+		/*
+		 * FileOutputStream out = null;
+		 * 
+		 * try { out = new FileOutputStream("file"); } catch (Exception e) {
+		 * 
+		 * } finally { 
+		 * try { 
+		 * out.close(); 
+		 * } catch (IOException e) { 
+		 * // TODO Auto-generated catch block 
+		 * e.printStackTrace(); 
+		 * } 
+		 * }
+		 */
+		
 	}
 
 	@Override
 	public User getUserByUserName(String userName) throws UserNotFound {
+			File userDir=new File("users\\");
+			if(!userDir.exists()) {
+				userDir.mkdir();
+			}
 		try (FileInputStream inputStream = new FileInputStream(FOLDER_NAME + userName + FILE_EXTENSION)) {
 			Input input = new Input(inputStream);
 			User user = kryo.readObject(input, User.class);
@@ -57,8 +72,8 @@ public class UserDaoKryo implements UserDao {
 			return user;
 			
 		} catch (FileNotFoundException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
+			log.error("could not open the file",e);
+			//e.printStackTrace();
 		} catch (IOException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
@@ -74,17 +89,20 @@ public class UserDaoKryo implements UserDao {
 	}
 
 	@Override
-	public void removeUser(User user) {
+	public void updateUser(User user) {
 		// TODO Auto-generated method stub
-		
+
 	}
 
 	@Override
-	public void updateUser(User user) {
+	public void removeUser(User user) {
 		// TODO Auto-generated method stub
-		
+
 	}
-	
-	
+
+	public UserDaoKryo() {
+		super();
+		kryo.register(User.class);
+	}
 
 }
