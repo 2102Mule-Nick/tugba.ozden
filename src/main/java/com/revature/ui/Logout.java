@@ -20,9 +20,6 @@ public class Logout implements Menu{
 		super();
 		this.authorizeService = authorizeService;
 	}
-
-
-
 	public AuthorizeService getAuthorizeService() {
 		return authorizeService;
 	}
@@ -63,6 +60,14 @@ public class Logout implements Menu{
 
 	@Override
 	public void answeringToUser() {
+		// TODO Auto-generated method stub
+		
+	}
+
+
+
+	@Override
+	public void displayFirst() {
 		// TODO Auto-generated method stub
 		
 	}

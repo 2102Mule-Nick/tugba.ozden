@@ -24,46 +24,35 @@ public class UserDaoKryo implements UserDao {
 	
 	private static final String FOLDER_NAME = "users\\";
 	
-	private static final String FILE_EXTENSION = ".txt";
+	private static final String FILE_EXTENSION = ".dat";
 
 	@Override
 	public void createUser(User user) throws UserNameTaken {
-		
 		log.info("Starting to create user");
 		
-		try(FileOutputStream outputStream = new FileOutputStream(FOLDER_NAME + user.getUserName() + FILE_EXTENSION)) {
+		String fileName=FOLDER_NAME + user.getUserName() + FILE_EXTENSION;
+		
+		/*File userDir=new File("users\\");
+		if(!userDir.exists()) {
+			userDir.mkdir();
+		}*/
+		
+		try(FileOutputStream outputStream = new FileOutputStream(fileName)) {
 			Output output = new Output(outputStream);
 			kryo.writeObject(output, user);
 			output.close();
 		} catch (FileNotFoundException e) {
-			log.error("could not open file", e);
+			//log.error("could not open file", e);
 		} catch (IOException e) {
-			e.printStackTrace();
-		}
-		
-		/*
-		 * FileOutputStream out = null;
-		 * 
-		 * try { out = new FileOutputStream("file"); } catch (Exception e) {
-		 * 
-		 * } finally { 
-		 * try { 
-		 * out.close(); 
-		 * } catch (IOException e) { 
-		 * // TODO Auto-generated catch block 
-		 * e.printStackTrace(); 
-		 * } 
-		 * }
-		 */
+			//e.printStackTrace();
+		}	
 		
 	}
 
 	@Override
 	public User getUserByUserName(String userName) throws UserNotFound {
-			File userDir=new File("users\\");
-			if(!userDir.exists()) {
-				userDir.mkdir();
-			}
+			
+			
 		try (FileInputStream inputStream = new FileInputStream(FOLDER_NAME + userName + FILE_EXTENSION)) {
 			Input input = new Input(inputStream);
 			User user = kryo.readObject(input, User.class);
@@ -72,11 +61,11 @@ public class UserDaoKryo implements UserDao {
 			return user;
 			
 		} catch (FileNotFoundException e) {
-			log.error("could not open the file",e);
+			//log.error("could not open the file",e);
 			//e.printStackTrace();
 		} catch (IOException e) {
 			// TODO Auto-generated catch block
-			e.printStackTrace();
+			//e.printStackTrace();
 		}
 		
 		return null;

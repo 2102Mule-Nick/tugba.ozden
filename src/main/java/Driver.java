@@ -26,10 +26,10 @@ public class Driver {
 		Menu login = new Login(authorizeService);
 		
 		Menu chatting= new Chatting();
-		 
-		//Menu logout=new Logout(authorizeService);
 		
-		Menu welcome = new Welcome(login, register);		
+		Menu logout=new Logout(authorizeService);	
+		
+		Menu welcome = new Welcome(login, register, logout);		
 		
 		((Registration) register).setWelcome(welcome);
 		
@@ -41,14 +41,15 @@ public class Driver {
 		
 		welcome.setScanner(scan);
 		
-		//logout.setScanner(scan)
+		logout.setScanner(scan);
 		
 		chatting.setScanner(scan);
 		
 		Menu nextM = welcome;
 		
-		
+		nextM.displayFirst();
 		do {
+			
 			nextM.displayOptions();					
 			nextM = nextM.advance();
 			
@@ -56,7 +57,7 @@ public class Driver {
 		//System.out.println("....");
 		nextM=chatting;
 		do {			
-			nextM.answeringToUser();
+			nextM.displayOptions();
 			nextM=nextM.advance();
 			
 		}while (nextM != null);

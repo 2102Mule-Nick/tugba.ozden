@@ -14,19 +14,20 @@ public class Chatting implements Menu{
 	private ContentsServiceImpl contentsService;
 	private Scanner scan;	
 	private Menu login;
-	private Menu registration;
+	private Menu welcome;
+	private Menu nextM;
+	
+	
 
 	public Chatting() {
 		super();
 		// TODO Auto-generated constructor stub
 	}
 
-	public Chatting(Menu login, Menu registration, ContentsServiceImpl contentsService) {
+	public Chatting(ContentsServiceImpl contentsService, Menu welcome) {
 		super();		
 		this.contentsService = contentsService;
-		this.login=login;
-		this.registration=registration;
-		//this.scan = scan;
+		this.contentsService=contentsService;		
 	}
 
 	public ContentsService getContentsService() {
@@ -44,26 +45,56 @@ public class Chatting implements Menu{
 
 	public void setLogin(Menu login) {
 		this.login = login;
-	}
-
-	public Menu getRegistration() {
-		return registration;
-	}
-	public void setRegistration(Menu registration) {
-		this.registration = registration;
-	}
+	}	
 
 	@Override
 	public Menu advance() {
 		// TODO Auto-generated method stub
-		return null;
+		return nextM;
 	}
 
 	@Override
 	public void displayOptions() {
-		// TODO Auto-generated method stub
-		
-	}
+		ContentsDaoImpl contentsDaoImpl=new ContentsDaoImpl();
+		 String answer="...";
+			System.out.println();
+			String machineAnswer="Hello";
+			//System.out.println("Machine : " + machineAnswer );
+			//String input;	
+			System.out.print("User  :  ");
+			String input=scan.nextLine();	
+			//Contents contents=new Contents(input);
+			//contents.setUserInput(input);
+			try {
+				Thread.sleep(1500);
+			} catch (InterruptedException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+			 			
+					//Random rndm = new Random();			
+					
+			    	/*try {
+			    		Thread.sleep(1000);	
+			    		System.out.println("Machine is typing.....");
+			    		Thread.sleep(1000);	
+			    	}catch (InterruptedException e) {
+						e.printStackTrace();
+				    	}*/		    					    	  
+				    	 	//if(1<contentsDaoImpl.GREETING.size() && input.contains(contentsDaoImpl.GREETING.get(1))) {			    			
+				    	    	//if( input.contains("Hello") || input.contains("hi") || input.contains("Hi")) {
+				    				//int k = rndm.nextInt(3);
+				    				//System.out.println(k);
+				    	    		answer="..............";
+					    			answer=contentsDaoImpl.getAnswerByInput(input);
+					    			//System.out.println("Machine  :"+  answer);
+					    			
+				    	    	//}else System.out.println("Machine : I didn't understand...");
+				    	 
+						
+			//System.out.println("Machine : " + contentsService.answering(input));
+			}
+	
 
 	@Override
 	public Menu previousMenu() {
@@ -83,48 +114,24 @@ public class Chatting implements Menu{
 	}	
 	
 	@Override
-	public void answeringToUser() {
-	 ContentsDaoImpl contentsDaoImpl=new ContentsDaoImpl();
-	 String answer="...";
-		System.out.println();
-		String machineAnswer="Hello";
-		//System.out.println("Machine : " + machineAnswer );
-		//String input;	
-		System.out.print("User  :  ");
-		String input=scan.nextLine();	
-		//Contents contents=new Contents(input);
-		//contents.setUserInput(input);
-		try {
-			Thread.sleep(1500);
-		} catch (InterruptedException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
-		 			
-				//Random rndm = new Random();			
-				
-		    	/*try {
-		    		Thread.sleep(1000);	
-		    		System.out.println("Machine is typing.....");
-		    		Thread.sleep(1000);	
-		    	}catch (InterruptedException e) {
-					e.printStackTrace();
-			    	}*/		    					    	  
-			    	 	//if(1<contentsDaoImpl.GREETING.size() && input.contains(contentsDaoImpl.GREETING.get(1))) {			    			
-			    	    	//if( input.contains("Hello") || input.contains("hi") || input.contains("Hi")) {
-			    				//int k = rndm.nextInt(3);
-			    				//System.out.println(k);
-			    	    		answer="..............";
-				    			answer=contentsDaoImpl.getAnswerByInput(input);
-				    			//System.out.println("Machine  :"+  answer);
-				    			
-			    	    	//}else System.out.println("Machine : I didn't understand...");
-			    	 	}
-					
-		//System.out.println("Machine : " + contentsService.answering(input));
+	public void answeringToUser() {	 
+		
+	}
+
+	public Menu getWelcome() {
+		return welcome;
+	}
+
+	public void setWelcome(Menu welcome) {
+		this.welcome = welcome;
+	}
+
+	@Override
+	public void displayFirst() {
+		// TODO Auto-generated method stub
 		
 	}
 		 
-	//}
+}//}
 
 

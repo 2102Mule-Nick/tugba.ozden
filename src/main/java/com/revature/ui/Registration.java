@@ -2,15 +2,18 @@ package com.revature.ui;
 
 import java.util.Scanner;
 
+import org.apache.log4j.Logger;
+
 import com.revature.exception.UserNameTaken;
 import com.revature.pojo.User;
 import com.revature.service.AuthorizeService;
 
 public class Registration implements Menu{
+	Logger log =Logger.getRootLogger();
 	
 	private Menu welcome;
 
-	private Menu next;
+	private Menu nextM;
 	
 	private Scanner scan;
 
@@ -21,36 +24,37 @@ public class Registration implements Menu{
 		// TODO Auto-generated constructor stub
 	}	
 
-	public Registration(Menu welcome, AuthorizeService authorizeService) {
+	public Registration(AuthorizeService authorizeService,Menu welcome) {
 		super();
-		this.welcome = welcome;
 		this.authorizeService = authorizeService;
+		this.welcome = welcome;		
 	}
 	
 	@Override
 	public Menu advance() {
-		// TODO Auto-generated method stub
-		return null;
+		
+		return nextM;
 	}
 
 	@Override
 	public void displayOptions() {
 		User user = new User();
-		System.out.println("Please enter a new username:");
+		System.out.println("Please enter a new username :");
 		user.setUserName(scan.nextLine());
-		System.out.println("Please enter a new password:");
+		System.out.println("Please enter a new password :");
 		user.setPassWord(scan.nextLine());
 		if (!authorizeService.existingUser(user)) {
 			try {
 				authorizeService.registerUser(user);
-				next = null;
+				nextM = null;
 			} catch (UserNameTaken e) {
 				System.out.println("Username exits, please try again");
-				next= welcome;
+				nextM= welcome;
 			}
 		} else {
+			log.warn("Username: "+ user.getUserName()+ "is already taken.");
 			System.out.println("Username exists, please try again");
-			next= welcome;
+			nextM= welcome;
 		}
 		
 	}
@@ -64,11 +68,11 @@ public class Registration implements Menu{
 	}
 
 	public Menu getNext() {
-		return next;
+		return nextM;
 	}
 
-	public void setNext(Menu next) {
-		this.next = next;
+	public void setNext(Menu nextM) {
+		this.nextM = nextM;
 	}
 
 	public Scanner getScan() {
@@ -105,6 +109,12 @@ public class Registration implements Menu{
 	}
 	@Override
 	public void answeringToUser() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void displayFirst() {
 		// TODO Auto-generated method stub
 		
 	}

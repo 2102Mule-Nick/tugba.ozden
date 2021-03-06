@@ -104,6 +104,12 @@ public class Login implements Menu {
 	public void setScanner(Scanner scan) {
 		this.scan=scan;
 		
+	}
+
+	@Override
+	public void displayFirst() {
+		// TODO Auto-generated method stub
+		
 	}	
 
 }

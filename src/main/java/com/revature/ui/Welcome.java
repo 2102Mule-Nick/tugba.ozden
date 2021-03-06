@@ -5,13 +5,14 @@ import java.util.Scanner;
 public class Welcome implements Menu {
 	
 	
-	Scanner scan=new Scanner(System.in);
+	private Scanner scan;
 	
 	private Menu login;
 	
 	private Menu registration;
 	
 	private Menu nextM;	
+	private Menu logout;
 	
 	public Welcome(Menu chatting) {
 		super();
@@ -22,7 +23,7 @@ public class Welcome implements Menu {
 		// TODO Auto-generated constructor stub
 	}
 
-	public Welcome(Menu login, Menu registration) {
+	public Welcome(Menu login, Menu registration, Menu logout) {
 		super();
 		this.login = login;
 		this.registration = registration;
@@ -33,19 +34,24 @@ public class Welcome implements Menu {
 		// TODO Auto-generated method stub
 		return nextM;
 	}
+	@Override
+	public void displayFirst() {		
+		System.out.println("*************************************************************************");
+		System.out.println("***** THIS CHATTING IS CREATED FOR IMPROVING BASIC ENGLISH SKILLS.  *****");
+		System.out.println("*****                                                               *****");
+		System.out.println("*****               WELCOME TO OUR CHATTING PROGRAM                 *****");
+		System.out.println("*****                                                               *****");
+		System.out.println("*************************************************************************");
+		
+	}
 
 	@Override
 	public void displayOptions() {
-		System.out.println("*************************************************************************");
-		System.out.println("***** THIS CHATTING IS CREATED FOR IMPROVING BASIC ENGLISH SKILLS. *****");
-		System.out.println("*****                                                              *****");
-		System.out.println("*****               WELCOME TO OUR CHATTING PROGRAM                *****");
-		System.out.println("*****                                                              *****");
-		System.out.println("*************************************************************************");
+		
 		//System.out.println("Welcome to Chating");
 		System.out.println("*************************************************************************");
-		System.out.println("Would you like to login or register?");
-		System.out.println("If you want to do login type 1 or register type 2 : ");
+		System.out.println("Would you like to login or register or logout?");
+		System.out.println("If you want to do login type 1 or register type 2 or logout type 3 : ");
 		System.out.println("*************************************************************************");
 		//System.out.println("register");
 		String answer = scan.nextLine();
@@ -54,10 +60,13 @@ public class Welcome implements Menu {
 			nextM= login;
 		} else if ("2".equals(answer)) {
 			nextM= registration;
-		} else {
+		} else if ("3".equals(answer)){
+			System.out.println("Thank you so much. See you next time!");
+			System.exit(0);
+		}else {
 			System.out.println("invalid input! ");
 			System.out.println("*************************************************************************");
-			System.out.println("If you want to do login type 1 or register type 2 : ");
+			System.out.println("If you want to do login type 1 or register type 2 or logout type 3 : ");
 			nextM= this;
 		}
 		
@@ -117,6 +126,14 @@ public class Welcome implements Menu {
 	public void answeringToUser() {
 		// TODO Auto-generated method stub
 		
+	}
+
+	public Menu getLogout() {
+		return logout;
+	}
+
+	public void setLogout(Menu logout) {
+		this.logout = logout;
 	}
 
 	
