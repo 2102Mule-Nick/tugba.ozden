@@ -2,7 +2,7 @@ package com.revature.pojo;
 
 public class User {
 	
-	private String userID;
+	private int userID;
 	
 	private String userName;
 	
@@ -13,7 +13,7 @@ public class User {
 		// TODO Auto-generated constructor stub
 	}
 
-	public User(String userID, String userName, String passWord) {
+	public User(int userID, String userName, String passWord) {
 		super();
 		this.userID = userID;
 		this.userName = userName;
@@ -28,11 +28,11 @@ public class User {
 		this.passWord = passWord;
 	}
 
-	public String getUserID() {
+	public int getUserID() {
 		return userID;
 	}
 
-	public void setUserID(String userID) {
+	public void setUserID(int userID) {
 		this.userID = userID;
 	}
 

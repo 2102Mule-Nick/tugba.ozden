@@ -2,6 +2,9 @@ import java.util.Scanner;
 
 import com.revature.dao.UserDao;
 import com.revature.dao.UserDaoKryo;
+import com.revature.dao.UserDaoPostgres;
+import com.revature.exception.UserNameTaken;
+import com.revature.pojo.User;
 import com.revature.service.AuthorizeService;
 import com.revature.service.AuthorizeServiceImpl;
 import com.revature.ui.Chatting;
@@ -15,7 +18,17 @@ import com.revature.ui.Welcome;
 public class Driver {
 	public static void main(String[] args) {
 		
+		//Tugba Ozden
+		
 		Scanner scan = new Scanner(System.in);
+		/*UserDaoPostgres po=new UserDaoPostgres();
+		User user =new User(1234,"john","123");
+		try {
+			po.createUser(user);
+		} catch (UserNameTaken e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}*/
 		
 		UserDao userDao = new UserDaoKryo();
 		

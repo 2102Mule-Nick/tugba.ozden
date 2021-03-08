@@ -7,6 +7,8 @@ import java.util.Scanner;
 
 import com.revature.pojo.Contents;
 import com.revature.pojo.User;
+import com.revature.ui.Logout;
+import com.revature.ui.Welcome;
 
 public class ContentsDaoImpl {	
 	
@@ -70,7 +72,7 @@ public class ContentsDaoImpl {
 		WELCOME.add("when did you come in the USA?");
 		WELCOME.add("when did leave from your country?");	
 		
-		WEL_ANSWR.add("I have been living for almost 4 years in USA.");
+		WEL_ANSWR.add("I have been living for almost 4 years in the USA.");
 		WEL_ANSWR.add("I left from my country since 2016. ");
 		WEL_ANSWR.add("I like to live America!.");	
 		
@@ -121,46 +123,67 @@ public class ContentsDaoImpl {
 					e.printStackTrace();
 			    	} 
 					int i=-1;
+					try {
 					while(stopLoop) {//System.out.println(GREETING.get(0));
-						i++;
-			    	 	if(i < GREETING.size() && input.toLowerCase().contains((GREETING.get(i).toLowerCase()))) {
+						i++;			    	 	
+						
+						if(i < GREETING.size() && input.toLowerCase().contains((GREETING.get(i).toLowerCase()))) {
 			    		    	
 			    				int k = rndm.nextInt(GREET_ANSWR.size());
 			    				//System.out.println(k);
 				    			answer="Machine  : " +GREET_ANSWR.get(k) ;
 				    			System.out.println(answer);
 				    			break;
-			    	    	}  	
+			    	    	} 
 			    	 	  	 	
-			    	 		else if(i < WELCOME.size() && input.toLowerCase().contains(WELCOME.get(i))||input.toLowerCase().contains(WEL_ANSWR.get(i))) {		    	    
+						else if(i < WELCOME.size() && input.toLowerCase().contains(WELCOME.get(i))||input.toLowerCase().contains(WEL_ANSWR.get(i))) {		    	    
 			    				int k = rndm.nextInt(WEL_ANSWR.size());
 			    				//System.out.println(k);
 				    			answer="Machine : Himm... " + WEL_ANSWR.get(k) ;
 				    			System.out.println(answer);
 				    			break;
-			    	    	}else if (i < FIRST_TALK.size() && input.toLowerCase().contains(FIRST_TALK.get(i)) ||input.toLowerCase().contains(FRST_TLK_ANSWR.get(i))) {
+			    	    	}
+						else if (i < FIRST_TALK.size() && input.toLowerCase().contains(FIRST_TALK.get(i)) ||input.toLowerCase().contains(FRST_TLK_ANSWR.get(i))) {
 			    				 int k = rndm.nextInt(FRST_TLK_ANSWR.size());
 			    				//System.out.println(k);
 				    			answer= "Machine : Good! "+FRST_TLK_ANSWR.get(k);
 				    			System.out.println(answer);
 				    			break;
-			    	    	}else if(i < EDUCATION.size() && input.toLowerCase().contains(EDUCATION.get(i))||input.toLowerCase().contains(EDCTN_ANSWR.get(i))){
+			    	    	}
+						else if(i < EDUCATION.size() && input.toLowerCase().contains(EDUCATION.get(i))||input.toLowerCase().contains(EDCTN_ANSWR.get(i))){
 				    				int k = rndm.nextInt(EDCTN_ANSWR.size());				    				
 					    			answer= "Machine :Great!"+ EDCTN_ANSWR.get(k) ;	
 					    			System.out.println("Himm..."+ answer);
 					    			break;
-			    	    	}else if(i < JOB.size() && input.toLowerCase().contains(JOB.get(i))||input.toLowerCase().contains(JOB_ANSWR.get(i))){
+			    	    	}
+						else if(i < JOB.size() && input.toLowerCase().contains(JOB.get(i))||input.toLowerCase().contains(JOB_ANSWR.get(i))){
 			    				int k = rndm.nextInt(JOB_ANSWR.size());				    				
 				    			answer= "Machine :Great!"+ JOB_ANSWR.get(k) ;	
 				    			System.out.println("Well... \n"+ answer);
 				    			break;
-		    	    	}else if(i < HOW.size() && input.toLowerCase().contains(HOW.get(i))||input.toLowerCase().contains(HOW_ANSWR.get(i))){
+		    	    	}						
+						else  if(i < HOW.size() && input.toLowerCase().contains(HOW.get(i))||input.toLowerCase().contains(HOW_ANSWR.get(i))){
 		    				int k = rndm.nextInt(HOW_ANSWR.size());				    				
 			    			answer= "Machine :Great!"+ HOW_ANSWR.get(k) ;	
 			    			System.out.println(" "+ answer);
 			    			break;
-		    	    		}	    	 		
-			    	 	
+		    	    		}
+						
+						else if (input.equals("3")) {							
+							 Logout log=new Logout();
+							 log.displayOptions();
+			    	         Welcome w=new Welcome();
+			    	         w.displayOptions();
+						}
+						else {
+			    	    		System.out.println("I don't understand.");
+			    	    		//System.exit(0);
+			    	  
+			    	    		
+			    	    	}	    	 		
+		    	    	
+					}}catch(Exception e){
+						e.getStackTrace();
 					}
 							
 				}return answer;	

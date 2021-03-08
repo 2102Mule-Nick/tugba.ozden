@@ -20,7 +20,7 @@ public class UserDaoImpl implements UserDao {
 			Iterator<User> iter = userList.iterator();
 			
 			while (iter.hasNext()) {
-				if (iter.next().getUserID().equals(user.getUserID())) {
+				if (iter.next().getUserID()==(user.getUserID())) {
 					throw new UserNameTaken("This username is taken");
 				}
 			}	
@@ -47,9 +47,9 @@ public class UserDaoImpl implements UserDao {
 	public UserDaoImpl() {
 		super();
 		userList = new ArrayList<>();
-		userList.add(new User("1", "tugba", "0123"));
-		userList.add(new User("2","pinal", "4567"));
-		userList.add(new User("3","amy", "8910"));
+		userList.add(new User(1, "tugba", "0123"));
+		userList.add(new User(2,"pinal", "4567"));
+		userList.add(new User(3,"amy", "8910"));
 	}
 
 	@Override

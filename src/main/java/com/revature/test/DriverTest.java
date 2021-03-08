@@ -36,11 +36,11 @@ public class DriverTest {
 	
 	
 	
-	/*@AfterEach
+	@AfterEach
 	private void tearDown() {
 		contentsList.clear();
 		contents = null;
-	}*/
+	}
 	
 	@Test
 	public void testGetUserByUserName() throws UserNotFound {
@@ -59,7 +59,7 @@ public class DriverTest {
 		Contents contents= new Contents();
 		
 		//Act
-		c.getAnswerByInput("What can I do for you?");
+		c.getAnswerByInput("What is your name?");
 		
 		//Assert
 		assertEquals("Contents should have 1 item in it", 1, contents.getAnswers().size());
@@ -74,7 +74,7 @@ public class DriverTest {
 	@Test
 	public void getAllUsers() throws UserNameTaken, UserNotFound {
 		UserDaoKryo kry=new UserDaoKryo();
-		kry.createUser(userDaoImpl.getUserByUserName("mehmet"));
+		kry.createUser(userDaoImpl.getUserByUserName("amy"));
 		for(User user:kry.getAllUsers()) {
 			System.out.println(user.toString());
 		}

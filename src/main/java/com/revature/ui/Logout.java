@@ -6,7 +6,7 @@ import com.revature.service.AuthorizeService;
 
 public class Logout implements Menu{
 	private AuthorizeService authorizeService;
-	
+	private Scanner scan;
 	
 
 	public Logout() {
@@ -36,7 +36,11 @@ public class Logout implements Menu{
 
 	@Override
 	public void displayOptions() {
-		// TODO Auto-generated method stub
+		System.out.println("Are you sure for logout? type yes");
+		String input=scan.nextLine();
+		if(input.toLowerCase().equals("yes")) {
+			System.exit(0);
+		}
 		
 	}
 
@@ -49,12 +53,12 @@ public class Logout implements Menu{
 	@Override
 	public Scanner getScanner() {
 		// TODO Auto-generated method stub
-		return null;
+		return scan;
 	}
 
 	@Override
 	public void setScanner(Scanner scan) {
-		// TODO Auto-generated method stub
+		this.scan=scan;
 		
 	}
 
