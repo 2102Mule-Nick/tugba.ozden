@@ -36,12 +36,18 @@ public class Logout implements Menu{
 
 	@Override
 	public void displayOptions() {
-		System.out.println("Are you sure for logout? type yes");
+		/*System.out.println("Are you sure for logout? type yes");
+		System.out.println("If you want to go Main menu, please type main");
 		String input=scan.nextLine();
 		if(input.toLowerCase().equals("yes")) {
 			System.exit(0);
-		}
-		
+		}else if (input.toLowerCase().equals("main")) {
+			Welcome wlcm=new Welcome();
+			wlcm.displayOptions();
+		}*/
+		//Thread.sleep(1000);	
+		System.out.println("You are exiting ...");
+		System.exit(0);
 	}
 
 	@Override

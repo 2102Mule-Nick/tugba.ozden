@@ -46,7 +46,7 @@ public class Registration implements Menu{
 		if (!authorizeService.existingUser(user)) {
 			try {
 				authorizeService.registerUser(user);
-				nextM = null;
+				nextM = welcome;
 			} catch (UserNameTaken e) {
 				System.out.println("Username exits, please try again");
 				nextM= welcome;

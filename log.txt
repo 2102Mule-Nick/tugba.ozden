@@ -1,0 +1,176 @@
+2021-03-08 13:07:49 INFO  root:31 - Starting to create user
+2021-03-08 13:14:05 WARN  root:55 - Username: whiteis already taken.
+2021-03-08 13:14:31 INFO  root:31 - Starting to create user
+2021-03-08 14:57:21 INFO  root:31 - Starting to create user
+2021-03-08 16:19:32 INFO  root:31 - Starting to create user
+2021-03-08 16:24:05 INFO  root:31 - Starting to create user
+2021-03-08 17:29:47 INFO  root:31 - Starting to create user
+2021-03-08 17:35:13 INFO  root:31 - Starting to create user
+2021-03-08 17:36:04 INFO  root:31 - Starting to create user
+2021-03-08 20:47:17 INFO  root:31 - Starting to create user
+2021-03-08 21:59:47 WARN  root:55 - Username: adminis already taken.
+2021-03-08 22:00:17 INFO  root:31 - Starting to create user
+2021-03-08 22:05:45 INFO  root:31 - Starting to create user
+2021-03-08 23:26:34 INFO  root:38 - URL : jdbc:postgresql://localhost:5432/chatting?
+2021-03-08 23:32:44 INFO  root:38 - URL : jdbc:postgresql://localhost:5432/chatting?
+2021-03-08 23:32:45 ERROR root:60 - Failure to connect to DB
+org.postgresql.util.PSQLException: ERROR: operator does not exist: character varying =?
+  Hint: No operator matches the given name and argument type. You might need to add an explicit type cast.
+  Position: 37
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2553)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2285)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:323)
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:481)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:401)
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:322)
+	at org.postgresql.jdbc.PgStatement.executeCachedSql(PgStatement.java:308)
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:284)
+	at org.postgresql.jdbc.PgStatement.executeQuery(PgStatement.java:236)
+	at com.revature.dao.UserDaoPostgres.getUserByUserName(UserDaoPostgres.java:50)
+	at com.revature.service.AuthorizeServiceImpl.authUser(AuthorizeServiceImpl.java:35)
+	at com.revature.ui.Login.displayOptions(Login.java:90)
+	at Driver.main(Driver.java:66)
+2021-03-08 23:50:14 INFO  root:38 - URL : jdbc:postgresql://localhost:5432/chatting?
+2021-03-08 23:50:14 INFO  root:54 - User found in DB
+2021-03-08 23:52:45 INFO  root:38 - URL : jdbc:postgresql://localhost:5432/chatting?
+2021-03-08 23:54:19 INFO  root:38 - URL : jdbc:postgresql://localhost:5432/chatting?
+2021-03-08 23:54:19 INFO  root:54 - User found in DB
+2021-03-09 00:18:20 INFO  root:38 - URL : jdbc:postgresql://localhost:5432/chatting?
+2021-03-09 00:18:21 INFO  root:52 - User found in DB
+2021-03-09 00:18:21 ERROR root:58 - Failure to connect to DB
+org.postgresql.util.PSQLException: The column index is out of range: 2, number of columns: 1.
+	at org.postgresql.core.v3.SimpleParameterList.bind(SimpleParameterList.java:69)
+	at org.postgresql.core.v3.SimpleParameterList.setNull(SimpleParameterList.java:172)
+	at org.postgresql.jdbc.PgPreparedStatement.setString(PgPreparedStatement.java:354)
+	at org.postgresql.jdbc.PgPreparedStatement.setString(PgPreparedStatement.java:342)
+	at com.revature.dao.UserDaoPostgres.getUserByUserName(UserDaoPostgres.java:54)
+	at com.revature.service.AuthorizeServiceImpl.authUser(AuthorizeServiceImpl.java:35)
+	at com.revature.ui.Login.displayOptions(Login.java:90)
+	at Driver.main(Driver.java:66)
+2021-03-09 00:21:01 INFO  root:38 - URL : jdbc:postgresql://localhost:5432/chatting?
+2021-03-09 00:21:01 INFO  root:52 - User found in DB
+2021-03-09 00:21:01 ERROR root:58 - Failure to connect to DB
+org.postgresql.util.PSQLException: The column index is out of range: 2, number of columns: 1.
+	at org.postgresql.core.v3.SimpleParameterList.bind(SimpleParameterList.java:69)
+	at org.postgresql.core.v3.SimpleParameterList.setNull(SimpleParameterList.java:172)
+	at org.postgresql.jdbc.PgPreparedStatement.setString(PgPreparedStatement.java:354)
+	at org.postgresql.jdbc.PgPreparedStatement.setString(PgPreparedStatement.java:342)
+	at com.revature.dao.UserDaoPostgres.getUserByUserName(UserDaoPostgres.java:54)
+	at com.revature.service.AuthorizeServiceImpl.authUser(AuthorizeServiceImpl.java:35)
+	at com.revature.ui.Login.displayOptions(Login.java:90)
+	at Driver.main(Driver.java:66)
+2021-03-09 15:13:09 INFO  root:38 - URL : jdbc:postgresql://localhost:5432/chatting?
+2021-03-09 15:13:14 INFO  root:38 - URL : jdbc:postgresql://localhost:5432/chatting?
+2021-03-10 09:04:55 INFO  root:38 - URL : jdbc:postgresql://localhost:5432/chatting?
+2021-03-10 09:05:50 INFO  root:38 - URL : jdbc:postgresql://localhost:5432/chatting?
+2021-03-10 09:08:30 INFO  root:38 - URL : jdbc:postgresql://localhost:5432/chatting?
+2021-03-10 10:26:40 INFO  root:38 - URL : jdbc:postgresql://localhost:5432/chatting?
+2021-03-10 10:26:40 INFO  root:52 - User found in DB
+2021-03-10 10:26:40 ERROR root:58 - Failure to connect to DB
+org.postgresql.util.PSQLException: The column index is out of range: 2, number of columns: 1.
+	at org.postgresql.core.v3.SimpleParameterList.bind(SimpleParameterList.java:69)
+	at org.postgresql.core.v3.SimpleParameterList.setNull(SimpleParameterList.java:172)
+	at org.postgresql.jdbc.PgPreparedStatement.setString(PgPreparedStatement.java:354)
+	at org.postgresql.jdbc.PgPreparedStatement.setString(PgPreparedStatement.java:342)
+	at com.revature.dao.UserDaoPostgres.getUserByUserName(UserDaoPostgres.java:54)
+	at com.revature.service.AuthorizeServiceImpl.authUser(AuthorizeServiceImpl.java:35)
+	at com.revature.ui.Login.displayOptions(Login.java:90)
+	at Driver.main(Driver.java:71)
+2021-03-10 10:30:14 INFO  root:38 - URL : jdbc:postgresql://localhost:5432/chatting?
+2021-03-10 10:30:15 INFO  root:52 - User found in DB
+2021-03-10 10:30:15 ERROR root:58 - Failure to connect to DB
+org.postgresql.util.PSQLException: The column index is out of range: 2, number of columns: 1.
+	at org.postgresql.core.v3.SimpleParameterList.bind(SimpleParameterList.java:69)
+	at org.postgresql.core.v3.SimpleParameterList.setNull(SimpleParameterList.java:172)
+	at org.postgresql.jdbc.PgPreparedStatement.setString(PgPreparedStatement.java:354)
+	at org.postgresql.jdbc.PgPreparedStatement.setString(PgPreparedStatement.java:342)
+	at com.revature.dao.UserDaoPostgres.getUserByUserName(UserDaoPostgres.java:54)
+	at com.revature.service.AuthorizeServiceImpl.authUser(AuthorizeServiceImpl.java:35)
+	at com.revature.ui.Login.displayOptions(Login.java:90)
+	at Driver.main(Driver.java:71)
+2021-03-10 10:31:56 INFO  root:38 - URL : jdbc:postgresql://localhost:5432/chatting?
+2021-03-10 10:31:56 INFO  root:52 - User found in DB
+2021-03-10 10:34:41 INFO  root:38 - URL : jdbc:postgresql://localhost:5432/chatting?
+2021-03-10 10:34:42 INFO  root:52 - User found in DB
+2021-03-10 10:35:02 INFO  root:38 - URL : jdbc:postgresql://localhost:5432/chatting?
+2021-03-10 10:35:18 INFO  root:38 - URL : jdbc:postgresql://localhost:5432/chatting?
+2021-03-10 10:37:26 INFO  root:38 - URL : jdbc:postgresql://localhost:5432/chatting?
+2021-03-10 10:37:27 INFO  root:52 - User found in DB
+2021-03-10 10:37:41 INFO  root:38 - URL : jdbc:postgresql://localhost:5432/chatting?
+2021-03-10 10:38:14 INFO  root:38 - URL : jdbc:postgresql://localhost:5432/chatting?
+2021-03-10 10:38:14 INFO  root:52 - User found in DB
+2021-03-10 10:38:24 INFO  root:38 - URL : jdbc:postgresql://localhost:5432/chatting?
+2021-03-10 10:40:44 INFO  root:38 - URL : jdbc:postgresql://localhost:5432/chatting?
+2021-03-10 10:41:08 INFO  root:38 - URL : jdbc:postgresql://localhost:5432/chatting?
+2021-03-10 10:41:08 INFO  root:52 - User found in DB
+2021-03-10 10:41:58 INFO  root:38 - URL : jdbc:postgresql://localhost:5432/chatting?
+2021-03-10 10:46:23 INFO  root:38 - URL : jdbc:postgresql://localhost:5432/chatting?
+2021-03-10 10:46:23 INFO  root:52 - User found in DB
+2021-03-10 10:46:34 INFO  root:38 - URL : jdbc:postgresql://localhost:5432/chatting?
+2021-03-10 10:46:42 INFO  root:38 - URL : jdbc:postgresql://localhost:5432/chatting?
+2021-03-10 10:49:16 INFO  root:38 - URL : jdbc:postgresql://localhost:5432/chatting?
+2021-03-10 10:49:16 INFO  root:52 - User found in DB
+2021-03-10 10:49:31 INFO  root:38 - URL : jdbc:postgresql://localhost:5432/chatting?
+2021-03-10 10:55:04 INFO  root:38 - URL : jdbc:postgresql://localhost:5432/chatting?
+2021-03-10 10:55:04 INFO  root:52 - User found in DB
+2021-03-10 10:55:18 INFO  root:38 - URL : jdbc:postgresql://localhost:5432/chatting?
+2021-03-10 10:55:25 INFO  root:38 - URL : jdbc:postgresql://localhost:5432/chatting?
+2021-03-10 10:56:17 INFO  root:38 - URL : jdbc:postgresql://localhost:5432/chatting?
+2021-03-10 10:56:18 INFO  root:52 - User found in DB
+2021-03-10 10:57:39 INFO  root:38 - URL : jdbc:postgresql://localhost:5432/chatting?
+2021-03-10 11:00:17 INFO  root:38 - URL : jdbc:postgresql://localhost:5432/chatting?
+2021-03-10 11:00:17 INFO  root:52 - User found in DB
+2021-03-10 11:03:25 INFO  root:38 - URL : jdbc:postgresql://localhost:5432/chatting?
+2021-03-10 11:10:36 INFO  root:38 - URL : jdbc:postgresql://localhost:5432/chatting?
+2021-03-10 11:20:31 INFO  root:38 - URL : jdbc:postgresql://localhost:5432/chatting?
+2021-03-10 11:20:32 INFO  root:52 - User found in DB
+2021-03-10 11:21:58 INFO  root:38 - URL : jdbc:postgresql://localhost:5432/chatting?
+2021-03-10 11:25:02 INFO  root:38 - URL : jdbc:postgresql://localhost:5432/chatting?
+2021-03-10 11:25:22 INFO  root:38 - URL : jdbc:postgresql://localhost:5432/chatting?
+2021-03-10 11:27:07 INFO  root:38 - URL : jdbc:postgresql://localhost:5432/chatting?
+2021-03-10 11:28:22 INFO  root:38 - URL : jdbc:postgresql://localhost:5432/chatting?
+2021-03-10 11:37:41 INFO  root:38 - URL : jdbc:postgresql://localhost:5432/chatting?
+2021-03-10 11:39:29 INFO  root:38 - URL : jdbc:postgresql://localhost:5432/chatting?
+2021-03-10 11:39:51 INFO  root:38 - URL : jdbc:postgresql://localhost:5432/chatting?
+2021-03-10 11:40:17 INFO  root:38 - URL : jdbc:postgresql://localhost:5432/chatting?
+2021-03-10 11:41:03 INFO  root:38 - URL : jdbc:postgresql://localhost:5432/chatting?
+2021-03-10 11:41:32 INFO  root:38 - URL : jdbc:postgresql://localhost:5432/chatting?
+2021-03-10 11:43:30 INFO  root:38 - URL : jdbc:postgresql://localhost:5432/chatting?
+2021-03-10 11:46:10 INFO  root:38 - URL : jdbc:postgresql://localhost:5432/chatting?
+2021-03-10 11:51:12 INFO  root:38 - URL : jdbc:postgresql://localhost:5432/chatting?
+2021-03-10 11:54:38 INFO  root:38 - URL : jdbc:postgresql://localhost:5432/chatting?
+2021-03-10 11:55:45 INFO  root:38 - URL : jdbc:postgresql://localhost:5432/chatting?
+2021-03-10 11:56:40 INFO  root:38 - URL : jdbc:postgresql://localhost:5432/chatting?
+2021-03-10 11:56:41 INFO  root:52 - User found in DB
+2021-03-10 11:56:55 INFO  root:38 - URL : jdbc:postgresql://localhost:5432/chatting?
+2021-03-10 11:56:55 INFO  root:38 - URL : jdbc:postgresql://localhost:5432/chatting?
+2021-03-10 11:56:55 ERROR root:78 - Failure to connect to DB
+org.postgresql.util.PSQLException: The column name input_id was not found in this ResultSet.
+	at org.postgresql.jdbc.PgResultSet.findColumn(PgResultSet.java:2748)
+	at org.postgresql.jdbc.PgResultSet.getInt(PgResultSet.java:2626)
+	at com.revature.dao.AnswerDaoImpl.getfindAnswerByCategoryId(AnswerDaoImpl.java:69)
+	at com.revature.dao.ContentsDaoImpl.getAnswerByInput(ContentsDaoImpl.java:137)
+	at com.revature.ui.Chatting.displayOptions(Chatting.java:72)
+	at Driver.main(Driver.java:80)
+2021-03-10 11:58:48 INFO  root:38 - URL : jdbc:postgresql://localhost:5432/chatting?
+2021-03-10 11:58:49 INFO  root:52 - User found in DB
+2021-03-10 11:59:00 INFO  root:38 - URL : jdbc:postgresql://localhost:5432/chatting?
+2021-03-10 11:59:00 INFO  root:38 - URL : jdbc:postgresql://localhost:5432/chatting?
+2021-03-10 11:59:10 INFO  root:38 - URL : jdbc:postgresql://localhost:5432/chatting?
+2021-03-10 11:59:10 INFO  root:38 - URL : jdbc:postgresql://localhost:5432/chatting?
+2021-03-10 11:59:23 INFO  root:38 - URL : jdbc:postgresql://localhost:5432/chatting?
+2021-03-10 11:59:23 INFO  root:38 - URL : jdbc:postgresql://localhost:5432/chatting?
+2021-03-10 12:01:59 INFO  root:38 - URL : jdbc:postgresql://localhost:5432/chatting?
+2021-03-10 12:02:00 INFO  root:52 - User found in DB
+2021-03-10 12:02:12 INFO  root:38 - URL : jdbc:postgresql://localhost:5432/chatting?
+2021-03-10 12:02:13 INFO  root:38 - URL : jdbc:postgresql://localhost:5432/chatting?
+2021-03-10 12:02:27 INFO  root:38 - URL : jdbc:postgresql://localhost:5432/chatting?
+2021-03-10 12:02:27 INFO  root:38 - URL : jdbc:postgresql://localhost:5432/chatting?
+2021-03-10 12:04:08 INFO  root:38 - URL : jdbc:postgresql://localhost:5432/chatting?
+2021-03-10 12:04:09 INFO  root:52 - User found in DB
+2021-03-10 12:05:23 INFO  root:38 - URL : jdbc:postgresql://localhost:5432/chatting?
+2021-03-10 12:06:21 INFO  root:38 - URL : jdbc:postgresql://localhost:5432/chatting?
+2021-03-10 12:15:56 INFO  root:38 - URL : jdbc:postgresql://localhost:5432/chatting?
+2021-03-10 12:15:56 INFO  root:52 - User found in DB
+2021-03-10 12:16:09 INFO  root:38 - URL : jdbc:postgresql://localhost:5432/chatting?
+2021-03-10 12:16:09 INFO  root:38 - URL : jdbc:postgresql://localhost:5432/chatting?

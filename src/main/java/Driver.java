@@ -1,5 +1,6 @@
 import java.util.Scanner;
 
+import com.revature.dao.AnswerDaoImpl;
 import com.revature.dao.UserDao;
 import com.revature.dao.UserDaoKryo;
 import com.revature.dao.UserDaoPostgres;
@@ -30,7 +31,11 @@ public class Driver {
 			e.printStackTrace();
 		}*/
 		
-		UserDao userDao = new UserDaoKryo();
+		/*AnswerDaoImpl a=new AnswerDaoImpl();
+		System.out.println(a.getAnswerByInput("hello").getCategoryId());*/
+		
+		
+		UserDao userDao = new UserDaoPostgres();
 		
 		AuthorizeService authorizeService = new AuthorizeServiceImpl(userDao);
 		
@@ -42,7 +47,7 @@ public class Driver {
 		
 		Menu logout=new Logout(authorizeService);	
 		
-		Menu welcome = new Welcome(login, register, logout);		
+		Menu welcome = new Welcome(login, register, logout, chatting);		
 		
 		((Registration) register).setWelcome(welcome);
 		
@@ -65,13 +70,15 @@ public class Driver {
 			
 			nextM.displayOptions();					
 			nextM = nextM.advance();
+			//login.displayOptions();
 			
 		} while (nextM != null);
-		//System.out.println("....");
+		
+		//nextM.displayOptions();
 		nextM=chatting;
 		do {			
 			nextM.displayOptions();
-			nextM=nextM.advance();
+			nextM=nextM.advance();	
 			
 		}while (nextM != null);
 		

@@ -4,55 +4,41 @@ import java.util.List;
 import java.util.Scanner;
 
 public class Contents {
-	//Scanner scan= new Scanner(System.in);
+	private int id;
 	private String userInput;
-	private String machineAnswer;	
-	private List<String> inputs;	
-	private List<String> answers;
+	private Answer machineAnswer;	
+	private int categoryId;	
+	private int answersId;
 	
-	public String getContentsCategory() {
-		return contentsCategory;
-	}
-
-
-	public void setContentsCategory(String contentsCategory) {
-		this.contentsCategory = contentsCategory;
-	}
-
-	private String contentsCategory;
-
+	
 	public Contents() {
 		super();
 		// TODO Auto-generated constructor stub
 	}
-	
 
-	public Contents(String userInput, String machineAnswer) {
+	public Contents(String userInput, Answer machineAnswer, int categoryId, int answersId) {
 		super();
 		this.userInput = userInput;
 		this.machineAnswer = machineAnswer;
-	}
-
-	public Contents(List<String> inputs, List<String> answers) {
-		super();
-		this.inputs = inputs;
-		this.answers = answers;
-		}
-	
-	
-
-	public Contents(List<String> answers, String contentsCategory) {
-		super();
-		this.answers = answers;
-		this.contentsCategory = contentsCategory;
+		this.categoryId = categoryId;
+		this.answersId = answersId;
 	}
 
 
-	public Contents(String userInput) {
-		super();
-		this.userInput = userInput;
-		//this.contentsCategory = contentsCategory;
+
+
+	public int getId() {
+		return id;
 	}
+
+
+
+
+	public void setId(int id) {
+		this.id = id;
+	}
+
+
 
 
 	public String getUserInput() {
@@ -60,37 +46,59 @@ public class Contents {
 	}
 
 
+
+
 	public void setUserInput(String userInput) {
-		//userInput.nextLine();
 		this.userInput = userInput;
 	}
 
 
-	public String getMachineAnswer() {
+
+
+	public Answer getMachineAnswer() {
 		return machineAnswer;
 	}
 
 
-	public void setMachineAnswer(String machineAnswer) {
+
+
+	public void setMachineAnswer(Answer machineAnswer) {
 		this.machineAnswer = machineAnswer;
 	}
 
 
-	public List<String> getInputs() {
-		return inputs;
+
+
+	public int getCategoryId() {
+		return categoryId;
 	}
 
-	public void setInputs(List<String> inputs) {
-		this.inputs = inputs;
+
+
+
+	public void setCategoryId(int categoryId) {
+		this.categoryId = categoryId;
 	}
 
-	public List<String> getAnswers() {
-		return answers;
+
+
+
+	public int getAnswersId() {
+		return answersId;
 	}
 
-	public void setAnswers(List<String> answers) {
-		this.answers = answers;
+
+
+
+	public void setAnswersId(int answersId) {
+		this.answersId = answersId;
 	}
+	
+	
+
+
+
+	
 	
 	
 	

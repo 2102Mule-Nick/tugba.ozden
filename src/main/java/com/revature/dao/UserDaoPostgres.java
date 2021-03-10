@@ -40,24 +40,22 @@ public class UserDaoPostgres implements UserDao {
 	public User getUserByUserName(String userName) throws UserNotFound {
 
 		User user = null;
-			
-		Connection conn = ConnectionFactoryPostgres.getConnection();		
-			
-			String sql = "select * from users where user_name =?";
+		PreparedStatement stmt=null;
+		Connection conn = ConnectionFactoryPostgres.getConnection();
+		String sql = "select * from users where user_name =? and pass_word=?";
+				
+					
 			try {
-			Statement stmt = conn.createStatement();
-			
-			ResultSet rs = stmt.executeQuery(sql);
-			
-			while (rs.next()) {
-				//log.info("User found in DB");
-				user = new User();
-				user.setUserName(rs.getString("user_name"));
-				user.setPassWord(rs.getString("pass_word"));
-			}
+				user=new User();
+				stmt = conn.prepareStatement(sql);
+				
+				log.info("User found in DB");				
+				stmt.setString(1,user.getUserName());
+				stmt.setString(2,user.getPassWord());
+		        stmt.execute();
 			
 		} catch (SQLException e) {
-			//log.error("Failure to connect to DB", e);
+			log.error("Failure to connect to DB", e);
 		}
 		
 		return user;
@@ -80,6 +78,7 @@ public class UserDaoPostgres implements UserDao {
 			stmt = conn.prepareStatement(sql);
 			stmt.setString(1, user.getPassWord());
 			stmt.setString(2, user.getUserName());
+		
 			stmt.execute();
 		} catch (SQLException e) {
 			// TODO Auto-generated catch block

@@ -13,6 +13,7 @@ public class Welcome implements Menu {
 	
 	private Menu nextM;	
 	private Menu logout;
+	private Menu chatting;
 	
 	public Welcome(Menu chatting) {
 		super();
@@ -23,10 +24,12 @@ public class Welcome implements Menu {
 		// TODO Auto-generated constructor stub
 	}
 
-	public Welcome(Menu login, Menu registration, Menu logout) {
+	public Welcome(Menu login, Menu registration, Menu logout, Menu chatting) {
 		super();
 		this.login = login;
 		this.registration = registration;
+		this.logout=logout;
+		this.chatting=chatting;
 	}
 
 	@Override
@@ -50,19 +53,28 @@ public class Welcome implements Menu {
 		
 		//System.out.println("Welcome to Chating");
 		System.out.println("*************************************************************************");
-		System.out.println("Would you like to login or register or logout?");
-		System.out.println("If you want to do login type 1 or register type 2 or logout type 3 : ");
+		System.out.println("Would you like to  login    -> 1");
+		System.out.println("                   register -> 2");
+		System.out.println("                   logout   -> 3");
+		
 		System.out.println("*************************************************************************");
 		//System.out.println("register");
 		String answer = scan.nextLine();
 		
 		if ("1".equals(answer)) {
 			nextM= login;
-		} else if ("2".equals(answer)) {
+		}
+		else if ("2".equals(answer)) {
 			nextM= registration;
-		} else if ("3".equals(answer)){
-			System.out.println("Thank you so much. See you next time!");
-			System.exit(0);
+		} //else if ("3".equals(answer)){
+			//nextM=chatting;
+		//
+		//}
+			else if("3".equals(answer)) {
+			nextM=logout;
+		
+			//System.out.println("Thank you so much. See you next time!");
+			//System.exit(0);
 		}else {
 			System.out.println("invalid input! ");
 			System.out.println("*************************************************************************");

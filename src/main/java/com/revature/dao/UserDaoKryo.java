@@ -45,7 +45,9 @@ public class UserDaoKryo implements UserDao {
 			//log.error("could not open file", e);
 		} catch (IOException e) {
 			//e.printStackTrace();
-		}	
+		}
+		
+		System.out.println("Registration is successful..."+ user.getUserName());
 		
 	}
 

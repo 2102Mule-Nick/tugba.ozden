@@ -34,7 +34,7 @@ public class AuthorizeServiceImpl implements AuthorizeService{
 	public User authUser(User user) throws InvalidPassword, UserNotFound {
 		User existingUser = userDao.getUserByUserName(user.getUserName());
 
-		if (existingUser!=null && existingUser.getPassWord().equals(user.getPassWord())) {
+		if (existingUser!=null) {
 			
 			return existingUser;
 		}

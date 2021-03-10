@@ -13,10 +13,28 @@ public class Login implements Menu {
 	private AuthorizeService authorizeService;
 	private ContentsService contentsService;
 	private Scanner scan;		
-	
+	private Menu nextM;
+	private Menu chatting;
+
+
+	public Menu getChatting() {
+		return chatting;
+	}
+
+	public void setChatting(Menu chatting) {
+		this.chatting = chatting;
+	}
 
 	public Scanner getScan() {
 		return scan;
+	}
+
+	public Menu getNextM() {
+		return nextM;
+	}
+
+	public void setNextM(Menu nextM) {
+		this.nextM = nextM;
 	}
 
 	public void setScan(Scanner scan) {
@@ -72,18 +90,54 @@ public class Login implements Menu {
 			authorizeService.authUser(user);
 			System.out.println("Login is happend succsesfully!");
 			System.out.println("Welcome to Chat " + user.getUserName());
-			//answeringToUser();
+			System.out.println("Login process ended... ");
+			System.out.println("\n");
+			System.out.println("*************************************************************************");
+			System.out.println("Would you like to    logout          -> 3");
+			System.out.println("                     chatting        -> 4");
+			System.out.println("                     update-account  -> 5");			
+			System.out.println("                     remove-account  -> 6");
 			
+			System.out.println("*************************************************************************");
 			
+			String answer = scan.nextLine();
+			
+			if ("4".equals(answer)) {
+				nextM= chatting;
+			}
+			/*else if ("5".equals(answer)) {
+				nextM= registration;
+			} //else if ("3".equals(answer)){
+				//nextM=chatting;
+			//
+			//}
+				else if("6".equals(answer)) {
+				nextM=logout;
+			
+				//System.out.println("Thank you so much. See you next time!");
+				//System.exit(0);
+			}*/
+			else {
+				System.out.println("invalid input! ");
+				System.out.println("*************************************************************************");
+				System.out.println("If you want to do login type 1 or register type 2 or logout type 3 : ");
+				nextM= this;
+			}
+			
+					
 		} catch (UserNotFound e) {
 			System.out.println("Username does not exist. Please register an account.");
+			this.displayOptions();
 		} catch (InvalidPassword e) {
 			System.out.println("Authentication error, please check username/password");
+			this.displayOptions();
 		} catch (Exception e) {
 			System.out.println("Sorry, something went wrong. Please try again.");
 			e.printStackTrace();
+			this.displayOptions();;
 		} finally {
-			System.out.println("...");
+			//System.out.println("Login process ended... ");
+			//this.displayOptions();
 		}
 		
 	}
