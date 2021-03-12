@@ -23,7 +23,7 @@ public class Driver {
 		
 		Scanner scan = new Scanner(System.in);
 		/*UserDaoPostgres po=new UserDaoPostgres();
-		User user =new User(1234,"john","123");
+		User user =new User(1234,"emily","123");
 		try {
 			po.createUser(user);
 		} catch (UserNameTaken e) {
@@ -37,7 +37,7 @@ public class Driver {
 		
 		UserDao userDao = new UserDaoPostgres();
 		
-		AuthorizeService authorizeService = new AuthorizeServiceImpl(userDao);
+		AuthorizeService authorizeService = new AuthorizeServiceImpl( userDao);
 		
 		Menu register = new Registration();
 		

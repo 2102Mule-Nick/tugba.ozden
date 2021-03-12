@@ -1,14 +1,18 @@
 package com.revature.service;
 
+import org.apache.log4j.Logger;
+
 import com.revature.dao.UserDao;
+import com.revature.dao.UserDaoPostgres;
 import com.revature.exception.InvalidPassword;
 import com.revature.exception.UserNameTaken;
 import com.revature.exception.UserNotFound;
 import com.revature.pojo.User;
 
 public class AuthorizeServiceImpl implements AuthorizeService{
+	Logger log =Logger.getRootLogger();
+	private UserDao userDao;
 	
-	private UserDao userDao;	
 
 	public UserDao getUserDao() {
 		return userDao;
@@ -34,7 +38,7 @@ public class AuthorizeServiceImpl implements AuthorizeService{
 	public User authUser(User user) throws InvalidPassword, UserNotFound {
 		User existingUser = userDao.getUserByUserName(user.getUserName());
 
-		if (existingUser!=null) {
+		if (existingUser.getPassWord().equals(user.getPassWord())) {
 			
 			return existingUser;
 		}
@@ -44,6 +48,7 @@ public class AuthorizeServiceImpl implements AuthorizeService{
 
 	@Override
 	public User registerUser(User user) throws UserNameTaken {
+		log.trace("register menu called...");
 		userDao.createUser(user);
 		return user;
 	}

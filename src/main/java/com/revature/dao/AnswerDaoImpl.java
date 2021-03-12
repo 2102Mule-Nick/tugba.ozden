@@ -1,9 +1,11 @@
 package com.revature.dao;
 
+import java.sql.CallableStatement;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.sql.Types;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -15,7 +17,7 @@ import com.revature.pojo.User;
 import com.revature.util.ConnectionFactoryPostgres;
 
 public class AnswerDaoImpl implements AnswerDao{
-	Logger log = Logger.getRootLogger();
+	//Logger log = Logger.getRootLogger();
 
 	@Override
 	public Contents getAnswerByInput(String user_input) {
@@ -42,7 +44,7 @@ public class AnswerDaoImpl implements AnswerDao{
 				
 		} catch (SQLException e) {
 			
-			log.error("Failure to connect to DB", e);
+			//log.error("Failure to connect to DB", e);
 		} 
 			return contents;
 		
@@ -75,7 +77,7 @@ public class AnswerDaoImpl implements AnswerDao{
 				}
 		} catch (SQLException e) {
 			
-			log.error("Failure to connect to DB", e);
+			//log.error("Failure to connect to DB", e);
 		}finally {
 			try {
 				conn.close();
@@ -89,11 +91,30 @@ public class AnswerDaoImpl implements AnswerDao{
 		return list;
 		
 	}
-	
-	
-	
-	
-	
+
+	@Override
+	public void getUserNameUsingCallable() throws SQLException {
+		
+		CallableStatement cstmt=null;
+		ResultSet rs= null;
+		Connection conn = ConnectionFactoryPostgres.getConnection();
+		
+		
+		 //Preparing a CallableStatement
+	      try {
+			cstmt = conn.prepareCall("{? = call getName(?)}");
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+
+	      cstmt.registerOutParameter(1, Types.VARCHAR);	     
+	      cstmt.execute();
+
+	      System.out.print("User Name: "+cstmt.getString(1));
+		
+		
+	}	
 	
 
 }

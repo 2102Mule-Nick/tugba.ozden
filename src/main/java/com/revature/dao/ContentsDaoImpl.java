@@ -13,7 +13,7 @@ import com.revature.ui.Welcome;
 
 public class ContentsDaoImpl {	
 	
-	 final static List<String> INPUT_LIST = new ArrayList<>();
+	 /*final static List<String> INPUT_LIST = new ArrayList<>();
 	
 	 final static List<String> GREETING=new ArrayList<>();
 	
@@ -40,7 +40,7 @@ public class ContentsDaoImpl {
 	//public static List<Contents> getContentsList() {
 		
 		//return _LIST;
-	//}
+	//}*/
 	//public static void createContents() {	
 		
 		
@@ -118,81 +118,35 @@ public class ContentsDaoImpl {
 				List<Answer> list=null;
 				
 				while(stopLoop) {
-					scan=new Scanner(System.in);
-				System.out.print("Type here-> ");					
-					input=scan.nextLine();
-					System.out.println(" ");
+								scan=new Scanner(System.in);
+								System.out.print("Type here-> ");					
+								input=scan.nextLine();
+								System.out.println(" ");
 		    	try {		    		
-		    		System.out.println("Machine is typing.....");
-		    		Thread.sleep(1000);	
-		    	}catch (InterruptedException e) {
+		    					System.out.println("Tugba is typing.....");
+		    					Thread.sleep(1000);	
+		    		}catch (InterruptedException e) {
 					e.printStackTrace();
 			    	} 
 					
-					try {
-						list=new ArrayList<Answer>();				
+						try {
+									list=new ArrayList<Answer>();				
 						
-						Contents contents=answerDaoImpl.getAnswerByInput(input);
-						//System.out.println(contents);
-						list=answerDaoImpl.getfindAnswerByCategoryId(contents);
+									Contents contents=answerDaoImpl.getAnswerByInput(input);
+									//System.out.println(contents);
+									list=answerDaoImpl.getfindAnswerByCategoryId(contents);
 						
-						if(list.size()>0) {
-						int k = rndm.nextInt(list.size());
+						if(list.size()>0 ) {
+								int k = rndm.nextInt(list.size());
 						 
-	    				//System.out.println(k);
-		    			answer=list.get(k).getAnswer();
-		    			System.out.println(answer);
+								//System.out.println(k);
+								answer=list.get(k).getAnswer();
+								System.out.println(answer);
 		    			
 						}
 						
-						/*if(i < GREETING.size() && input.toLowerCase().contains((GREETING.get(i).toLowerCase()))) {
-			    		    	
-			    				int k = rndm.nextInt(GREET_ANSWR.size());
-			    				//System.out.println(k);
-				    			answer=GREET_ANSWR.get(k) ;
-				    			System.out.println(answer);
-				    			break;
-			    	    	}*/
 						
-						
-			    	 	  	 	
-						/*else if(i < WELCOME.size() && input.toLowerCase().contains(WELCOME.get(i))||input.toLowerCase().contains(WEL_ANSWR.get(i))) {		    	    
-			    				int k = rndm.nextInt(WEL_ANSWR.size());
-			    				//System.out.println(k);
-				    			answer= WEL_ANSWR.get(k) ;
-				    			System.out.println(answer);
-				    			break;
-			    	    	}
-						else if (i < FIRST_TALK.size() && input.toLowerCase().contains(FIRST_TALK.get(i)) ||input.toLowerCase().contains(FRST_TLK_ANSWR.get(i))) {
-			    				 int k = rndm.nextInt(FRST_TLK_ANSWR.size());
-			    				//System.out.println(k);
-				    			answer=FRST_TLK_ANSWR.get(k);
-				    			System.out.println(answer);
-				    			break;
-			    	    	}
-						else if(i < EDUCATION.size() && input.toLowerCase().contains(EDUCATION.get(i))||input.toLowerCase().contains(EDCTN_ANSWR.get(i))){
-				    				int k = rndm.nextInt(EDCTN_ANSWR.size());				    				
-					    			answer=  EDCTN_ANSWR.get(k) ;	
-					    			System.out.println("Himm..."+ answer);
-					    			break;
-			    	    	}
-						
-						else  if(i < HOW.size() && input.toLowerCase().contains(HOW.get(i))||input.toLowerCase().contains(HOW_ANSWR.get(i))){
-		    				int k = rndm.nextInt(HOW_ANSWR.size());				    				
-			    			answer= HOW_ANSWR.get(k) ;	
-			    			System.out.println(" "+ answer);
-			    			break;
-		    	    		}						
-						
-						
-						else if(i < JOB.size() && input.toLowerCase().contains(JOB.get(i))||input.toLowerCase().contains(JOB_ANSWR.get(i))){
-			    				int k = rndm.nextInt(JOB_ANSWR.size());				    				
-				    			answer=  JOB_ANSWR.get(k) ;	
-				    			System.out.println("Well... \n"+ answer);
-				    			break;
-		    	    	}	*/					
-						
-						else if (input.equals("3")) {
+						else  if ("3".equals(input)) {
 							
 							System.out.println("Thank you so much.See you next time!");
 							Thread.sleep(1200);	
@@ -205,19 +159,23 @@ public class ContentsDaoImpl {
 			    	         
 						}
 						else {
-			    	    		System.out.println("Could you please type again?");
-			    	    		//System.exit(0);
+			    	    		System.out.println("Could you please type again?");  		
 			    	  
 			    	    		
-			    	    	}	    	 		
+			    	    	}	
+						
+						
 		    	    	
 					}catch(Exception e){
 						e.getStackTrace();
 					}
 							
-				}return answer;	
+				}
+				
+				
+				return answer;	
 		
-}
+			}
 	
 }
 		 

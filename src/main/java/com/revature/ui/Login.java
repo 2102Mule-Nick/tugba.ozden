@@ -15,7 +15,16 @@ public class Login implements Menu {
 	private Scanner scan;		
 	private Menu nextM;
 	private Menu chatting;
+	private Menu logout;
 
+
+	public Menu getLogout() {
+		return logout;
+	}
+
+	public void setLogout(Menu logout) {
+		this.logout = logout;
+	}
 
 	public Menu getChatting() {
 		return chatting;
@@ -104,19 +113,21 @@ public class Login implements Menu {
 			
 			if ("4".equals(answer)) {
 				nextM= chatting;
-			}
-			/*else if ("5".equals(answer)) {
+			}/*
+			else if ("5".equals(answer)) {
 				nextM= registration;
-			} //else if ("3".equals(answer)){
-				//nextM=chatting;
-			//
-			//}
-				else if("6".equals(answer)) {
-				nextM=logout;
+			}*/ else if ("3".equals(answer)){
+				Logout log=new Logout();
+				//nextM=logout;
+				log.displayOptions();
+			
+			}
+				//else if("6".equals(answer)) {
+				//nextM=remove;
 			
 				//System.out.println("Thank you so much. See you next time!");
 				//System.exit(0);
-			}*/
+			//}
 			else {
 				System.out.println("invalid input! ");
 				System.out.println("*************************************************************************");
@@ -133,8 +144,8 @@ public class Login implements Menu {
 			this.displayOptions();
 		} catch (Exception e) {
 			System.out.println("Sorry, something went wrong. Please try again.");
-			e.printStackTrace();
-			this.displayOptions();;
+			//e.printStackTrace();
+			this.displayOptions();
 		} finally {
 			//System.out.println("Login process ended... ");
 			//this.displayOptions();

@@ -46,13 +46,15 @@ public class Registration implements Menu{
 		if (!authorizeService.existingUser(user)) {
 			try {
 				authorizeService.registerUser(user);
+				System.out.println(" ");
+				System.out.println("User is created.");
 				nextM = welcome;
 			} catch (UserNameTaken e) {
 				System.out.println("Username exits, please try again");
 				nextM= welcome;
 			}
 		} else {
-			log.warn("Username: "+ user.getUserName()+ "is already taken.");
+			log.warn("Username: "+ user.getUserName()+ " is already taken.");
 			System.out.println("Username exists, please try again");
 			nextM= welcome;
 		}

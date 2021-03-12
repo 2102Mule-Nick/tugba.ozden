@@ -1,6 +1,7 @@
 package com.revature.dao;
 
 import java.sql.Connection;
+import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
@@ -18,7 +19,7 @@ public class UserDaoPostgres implements UserDao {
 
 	@Override
 	public void createUser(User user) throws UserNameTaken {	
-		
+		log.trace("UserDaoPostgres.createUser method called");
 		
 		Connection conn = ConnectionFactoryPostgres.getConnection();
 		
@@ -39,10 +40,10 @@ public class UserDaoPostgres implements UserDao {
 	@Override
 	public User getUserByUserName(String userName) throws UserNotFound {
 
-		User user = null;
+		/*User user = null;
 		PreparedStatement stmt=null;
 		Connection conn = ConnectionFactoryPostgres.getConnection();
-		String sql = "select * from users where user_name =? and pass_word=?";
+		String sql = "select * from users where user_name =?";
 				
 					
 			try {
@@ -53,6 +54,32 @@ public class UserDaoPostgres implements UserDao {
 				stmt.setString(1,user.getUserName());
 				stmt.setString(2,user.getPassWord());
 		        stmt.execute();
+			
+		} catch (SQLException e) {
+			log.error("Failure to connect to DB", e);
+		}
+		
+		return user;*/
+		
+		
+		User user = null;	
+		
+		Connection conn = ConnectionFactoryPostgres.getConnection();
+		
+		try  {		
+			
+			String sql = "select * from users where user_name = '" + userName + "'";
+			
+			Statement stmt = conn.createStatement();
+			
+			ResultSet rs = stmt.executeQuery(sql);
+			
+			while (rs.next()) {
+				log.info("User found in DB");
+				user = new User();
+				user.setUserName(rs.getString("user_name"));
+				user.setPassWord(rs.getString("pass_word"));
+			}
 			
 		} catch (SQLException e) {
 			log.error("Failure to connect to DB", e);
@@ -76,10 +103,10 @@ public class UserDaoPostgres implements UserDao {
 		conn = ConnectionFactoryPostgres.getConnection();
 		try {
 			stmt = conn.prepareStatement(sql);
-			stmt.setString(1, user.getPassWord());
-			stmt.setString(2, user.getUserName());
-		
-			stmt.execute();
+		stmt.setString(1, user.getUserName());
+		stmt.setString(2, user.getPassWord());
+			stmt.executeUpdate();
+			conn.close();
 		} catch (SQLException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
@@ -100,10 +127,12 @@ public class UserDaoPostgres implements UserDao {
 		
 		try {
 			stmt=conn.prepareStatement(sql);
-			stmt.setString(1, user.getPassWord());
-			stmt.setString(2, user.getUserName());
-			stmt.execute();
+			stmt.setString(1, user.getUserName());
+			stmt.setString(2, user.getPassWord());
+			
+			stmt.executeUpdate();
 			log.info("User is updated");
+			conn.close();
 		} catch (SQLException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();

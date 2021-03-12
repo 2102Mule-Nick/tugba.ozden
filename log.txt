@@ -174,3 +174,319 @@ org.postgresql.util.PSQLException: The column name input_id was not found in thi
 2021-03-10 12:15:56 INFO  root:52 - User found in DB
 2021-03-10 12:16:09 INFO  root:38 - URL : jdbc:postgresql://localhost:5432/chatting?
 2021-03-10 12:16:09 INFO  root:38 - URL : jdbc:postgresql://localhost:5432/chatting?
+2021-03-10 12:17:09 INFO  root:38 - URL : jdbc:postgresql://localhost:5432/chatting?
+2021-03-10 12:17:09 INFO  root:52 - User found in DB
+2021-03-10 12:17:22 INFO  root:38 - URL : jdbc:postgresql://localhost:5432/chatting?
+2021-03-10 12:17:22 INFO  root:38 - URL : jdbc:postgresql://localhost:5432/chatting?
+2021-03-10 12:17:33 INFO  root:38 - URL : jdbc:postgresql://localhost:5432/chatting?
+2021-03-10 12:17:33 INFO  root:38 - URL : jdbc:postgresql://localhost:5432/chatting?
+2021-03-10 12:17:40 INFO  root:38 - URL : jdbc:postgresql://localhost:5432/chatting?
+2021-03-10 12:17:40 INFO  root:38 - URL : jdbc:postgresql://localhost:5432/chatting?
+2021-03-11 20:54:25 INFO  root:38 - URL : jdbc:postgresql://localhost:5432/chatting?
+2021-03-11 20:54:25 INFO  root:52 - User found in DB
+2021-03-11 20:54:48 INFO  root:38 - URL : jdbc:postgresql://localhost:5432/chatting?
+2021-03-11 20:54:48 INFO  root:38 - URL : jdbc:postgresql://localhost:5432/chatting?
+2021-03-11 20:55:13 INFO  root:38 - URL : jdbc:postgresql://localhost:5432/chatting?
+2021-03-11 20:55:13 INFO  root:38 - URL : jdbc:postgresql://localhost:5432/chatting?
+2021-03-11 20:55:32 INFO  root:38 - URL : jdbc:postgresql://localhost:5432/chatting?
+2021-03-11 20:55:32 INFO  root:38 - URL : jdbc:postgresql://localhost:5432/chatting?
+2021-03-11 20:55:40 INFO  root:38 - URL : jdbc:postgresql://localhost:5432/chatting?
+2021-03-11 20:55:40 INFO  root:38 - URL : jdbc:postgresql://localhost:5432/chatting?
+2021-03-11 20:56:42 INFO  root:38 - URL : jdbc:postgresql://localhost:5432/chatting?
+2021-03-11 20:56:42 INFO  root:38 - URL : jdbc:postgresql://localhost:5432/chatting?
+2021-03-11 20:56:55 INFO  root:38 - URL : jdbc:postgresql://localhost:5432/chatting?
+2021-03-11 20:56:56 INFO  root:38 - URL : jdbc:postgresql://localhost:5432/chatting?
+2021-03-11 20:57:12 INFO  root:38 - URL : jdbc:postgresql://localhost:5432/chatting?
+2021-03-11 20:57:12 INFO  root:38 - URL : jdbc:postgresql://localhost:5432/chatting?
+2021-03-11 20:57:30 INFO  root:38 - URL : jdbc:postgresql://localhost:5432/chatting?
+2021-03-11 20:57:30 INFO  root:38 - URL : jdbc:postgresql://localhost:5432/chatting?
+2021-03-11 20:57:46 INFO  root:38 - URL : jdbc:postgresql://localhost:5432/chatting?
+2021-03-11 20:57:46 INFO  root:38 - URL : jdbc:postgresql://localhost:5432/chatting?
+2021-03-11 20:58:03 INFO  root:38 - URL : jdbc:postgresql://localhost:5432/chatting?
+2021-03-11 20:58:03 INFO  root:38 - URL : jdbc:postgresql://localhost:5432/chatting?
+2021-03-11 20:58:17 INFO  root:38 - URL : jdbc:postgresql://localhost:5432/chatting?
+2021-03-11 20:58:17 INFO  root:38 - URL : jdbc:postgresql://localhost:5432/chatting?
+2021-03-11 20:58:28 INFO  root:38 - URL : jdbc:postgresql://localhost:5432/chatting?
+2021-03-11 20:58:28 INFO  root:38 - URL : jdbc:postgresql://localhost:5432/chatting?
+2021-03-11 20:59:18 INFO  root:38 - URL : jdbc:postgresql://localhost:5432/chatting?
+2021-03-11 20:59:19 INFO  root:52 - User found in DB
+2021-03-11 20:59:19 WARN  root:55 - Username: emilyis already taken.
+2021-03-11 21:03:22 INFO  root:38 - URL : jdbc:postgresql://localhost:5432/chatting?
+2021-03-11 21:03:22 INFO  root:52 - User found in DB
+2021-03-11 21:03:22 WARN  root:55 - Username: mikeis already taken.
+2021-03-11 21:19:28 INFO  root:38 - URL : jdbc:postgresql://localhost:5432/chatting?
+2021-03-11 21:20:37 INFO  root:38 - URL : jdbc:postgresql://localhost:5432/chatting?
+2021-03-11 21:22:22 INFO  root:38 - URL : jdbc:postgresql://localhost:5432/chatting?
+2021-03-11 21:22:22 INFO  root:52 - User found in DB
+2021-03-11 21:22:22 WARN  root:55 - Username: demo is already taken.
+2021-03-11 21:22:38 INFO  root:38 - URL : jdbc:postgresql://localhost:5432/chatting?
+2021-03-11 21:22:38 INFO  root:52 - User found in DB
+2021-03-11 21:55:12 INFO  root:38 - URL : jdbc:postgresql://localhost:5432/chatting?
+2021-03-11 21:55:13 INFO  root:52 - User found in DB
+2021-03-11 21:56:00 INFO  root:38 - URL : jdbc:postgresql://localhost:5432/chatting?
+2021-03-11 21:56:00 INFO  root:38 - URL : jdbc:postgresql://localhost:5432/chatting?
+2021-03-11 21:56:10 INFO  root:38 - URL : jdbc:postgresql://localhost:5432/chatting?
+2021-03-11 21:56:10 INFO  root:38 - URL : jdbc:postgresql://localhost:5432/chatting?
+2021-03-11 21:59:30 INFO  root:38 - URL : jdbc:postgresql://localhost:5432/chatting?
+2021-03-11 21:59:30 INFO  root:52 - User found in DB
+2021-03-11 22:02:22 INFO  root:38 - URL : jdbc:postgresql://localhost:5432/chatting?
+2021-03-11 22:02:22 INFO  root:52 - User found in DB
+2021-03-11 22:02:22 WARN  root:55 - Username: demo is already taken.
+2021-03-11 22:08:25 INFO  root:38 - URL : jdbc:postgresql://localhost:5432/chatting?
+2021-03-11 22:08:25 INFO  root:52 - User found in DB
+2021-03-11 22:08:25 WARN  root:55 - Username: murat is already taken.
+2021-03-11 22:09:09 INFO  root:38 - URL : jdbc:postgresql://localhost:5432/chatting?
+2021-03-11 22:09:09 INFO  root:52 - User found in DB
+2021-03-11 22:09:26 INFO  root:38 - URL : jdbc:postgresql://localhost:5432/chatting?
+2021-03-11 22:09:26 INFO  root:38 - URL : jdbc:postgresql://localhost:5432/chatting?
+2021-03-11 22:09:30 INFO  root:38 - URL : jdbc:postgresql://localhost:5432/chatting?
+2021-03-11 22:09:30 INFO  root:38 - URL : jdbc:postgresql://localhost:5432/chatting?
+2021-03-11 22:18:31 INFO  root:38 - URL : jdbc:postgresql://localhost:5432/chatting?
+2021-03-11 22:18:31 INFO  root:52 - User found in DB
+2021-03-11 22:19:08 INFO  root:38 - URL : jdbc:postgresql://localhost:5432/chatting?
+2021-03-11 22:19:08 INFO  root:52 - User found in DB
+2021-03-11 22:19:08 WARN  root:55 - Username: demo is already taken.
+2021-03-11 22:19:39 INFO  root:38 - URL : jdbc:postgresql://localhost:5432/chatting?
+2021-03-11 22:19:39 INFO  root:52 - User found in DB
+2021-03-11 22:19:49 INFO  root:38 - URL : jdbc:postgresql://localhost:5432/chatting?
+2021-03-11 22:19:49 INFO  root:52 - User found in DB
+2021-03-11 22:21:24 INFO  root:38 - URL : jdbc:postgresql://localhost:5432/chatting?
+2021-03-11 22:25:50 INFO  root:38 - URL : jdbc:postgresql://localhost:5432/chatting?
+2021-03-11 22:25:51 INFO  root:52 - User found in DB
+2021-03-11 22:26:56 INFO  root:38 - URL : jdbc:postgresql://localhost:5432/chatting?
+2021-03-11 22:26:57 INFO  root:52 - User found in DB
+2021-03-11 22:31:20 INFO  root:38 - URL : jdbc:postgresql://localhost:5432/chatting?
+2021-03-11 22:31:21 INFO  root:52 - User found in DB
+2021-03-11 22:39:15 INFO  root:38 - URL : jdbc:postgresql://localhost:5432/chatting?
+2021-03-11 22:39:15 INFO  root:52 - User found in DB
+2021-03-11 22:39:15 ERROR root:58 - Failure to connect to DB
+org.postgresql.util.PSQLException: The column index is out of range: 2, number of columns: 1.
+	at org.postgresql.core.v3.SimpleParameterList.bind(SimpleParameterList.java:69)
+	at org.postgresql.core.v3.SimpleParameterList.setNull(SimpleParameterList.java:172)
+	at org.postgresql.jdbc.PgPreparedStatement.setString(PgPreparedStatement.java:354)
+	at org.postgresql.jdbc.PgPreparedStatement.setString(PgPreparedStatement.java:342)
+	at com.revature.dao.UserDaoPostgres.getUserByUserName(UserDaoPostgres.java:54)
+	at com.revature.service.AuthorizeServiceImpl.authUser(AuthorizeServiceImpl.java:39)
+	at com.revature.ui.Login.displayOptions(Login.java:90)
+	at Driver.main(Driver.java:71)
+2021-03-11 22:39:49 INFO  root:38 - URL : jdbc:postgresql://localhost:5432/chatting?
+2021-03-11 22:39:49 INFO  root:52 - User found in DB
+2021-03-11 22:39:49 ERROR root:58 - Failure to connect to DB
+org.postgresql.util.PSQLException: The column index is out of range: 2, number of columns: 1.
+	at org.postgresql.core.v3.SimpleParameterList.bind(SimpleParameterList.java:69)
+	at org.postgresql.core.v3.SimpleParameterList.setNull(SimpleParameterList.java:172)
+	at org.postgresql.jdbc.PgPreparedStatement.setString(PgPreparedStatement.java:354)
+	at org.postgresql.jdbc.PgPreparedStatement.setString(PgPreparedStatement.java:342)
+	at com.revature.dao.UserDaoPostgres.getUserByUserName(UserDaoPostgres.java:54)
+	at com.revature.service.AuthorizeServiceImpl.authUser(AuthorizeServiceImpl.java:39)
+	at com.revature.ui.Login.displayOptions(Login.java:90)
+	at Driver.main(Driver.java:71)
+2021-03-11 23:00:37 INFO  root:38 - URL : jdbc:postgresql://localhost:5432/chatting?
+2021-03-11 23:00:37 INFO  root:52 - User found in DB
+2021-03-11 23:00:37 ERROR root:58 - Failure to connect to DB
+org.postgresql.util.PSQLException: The column index is out of range: 2, number of columns: 1.
+	at org.postgresql.core.v3.SimpleParameterList.bind(SimpleParameterList.java:69)
+	at org.postgresql.core.v3.SimpleParameterList.setNull(SimpleParameterList.java:172)
+	at org.postgresql.jdbc.PgPreparedStatement.setString(PgPreparedStatement.java:354)
+	at org.postgresql.jdbc.PgPreparedStatement.setString(PgPreparedStatement.java:342)
+	at com.revature.dao.UserDaoPostgres.getUserByUserName(UserDaoPostgres.java:54)
+	at com.revature.service.AuthorizeServiceImpl.existingUser(AuthorizeServiceImpl.java:28)
+	at com.revature.ui.Registration.displayOptions(Registration.java:46)
+	at Driver.main(Driver.java:71)
+2021-03-11 23:00:37 WARN  root:55 - Username: tyme is already taken.
+2021-03-11 23:26:52 INFO  root:38 - URL : jdbc:postgresql://localhost:5432/chatting?
+2021-03-11 23:26:52 ERROR root:85 - Failure to connect to DB
+org.postgresql.util.PSQLException: ERROR: relation "user_acc" does not exist
+  Position: 15
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2553)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2285)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:323)
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:481)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:401)
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:322)
+	at org.postgresql.jdbc.PgStatement.executeCachedSql(PgStatement.java:308)
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:284)
+	at org.postgresql.jdbc.PgStatement.executeQuery(PgStatement.java:236)
+	at com.revature.dao.UserDaoPostgres.getUserByUserName(UserDaoPostgres.java:75)
+	at com.revature.service.AuthorizeServiceImpl.existingUser(AuthorizeServiceImpl.java:28)
+	at com.revature.ui.Registration.displayOptions(Registration.java:46)
+	at Driver.main(Driver.java:71)
+2021-03-11 23:26:52 INFO  root:38 - URL : jdbc:postgresql://localhost:5432/chatting?
+2021-03-11 23:27:41 INFO  root:38 - URL : jdbc:postgresql://localhost:5432/chatting?
+2021-03-11 23:27:41 INFO  root:78 - User found in DB
+2021-03-11 23:27:41 WARN  root:55 - Username: demo is already taken.
+2021-03-11 23:28:38 INFO  root:38 - URL : jdbc:postgresql://localhost:5432/chatting?
+2021-03-11 23:28:38 INFO  root:38 - URL : jdbc:postgresql://localhost:5432/chatting?
+2021-03-11 23:29:29 INFO  root:38 - URL : jdbc:postgresql://localhost:5432/chatting?
+2021-03-11 23:29:29 INFO  root:78 - User found in DB
+2021-03-11 23:29:45 INFO  root:38 - URL : jdbc:postgresql://localhost:5432/chatting?
+2021-03-11 23:29:45 INFO  root:38 - URL : jdbc:postgresql://localhost:5432/chatting?
+2021-03-11 23:30:21 INFO  root:38 - URL : jdbc:postgresql://localhost:5432/chatting?
+2021-03-11 23:30:21 INFO  root:38 - URL : jdbc:postgresql://localhost:5432/chatting?
+2021-03-11 23:30:35 INFO  root:38 - URL : jdbc:postgresql://localhost:5432/chatting?
+2021-03-11 23:30:35 INFO  root:38 - URL : jdbc:postgresql://localhost:5432/chatting?
+2021-03-11 23:30:49 INFO  root:38 - URL : jdbc:postgresql://localhost:5432/chatting?
+2021-03-11 23:30:49 INFO  root:38 - URL : jdbc:postgresql://localhost:5432/chatting?
+2021-03-11 23:31:02 INFO  root:38 - URL : jdbc:postgresql://localhost:5432/chatting?
+2021-03-11 23:31:02 INFO  root:38 - URL : jdbc:postgresql://localhost:5432/chatting?
+2021-03-11 23:31:29 INFO  root:38 - URL : jdbc:postgresql://localhost:5432/chatting?
+2021-03-11 23:31:29 INFO  root:38 - URL : jdbc:postgresql://localhost:5432/chatting?
+2021-03-11 23:37:24 INFO  root:38 - URL : jdbc:postgresql://localhost:5432/chatting?
+2021-03-11 23:37:25 INFO  root:78 - User found in DB
+2021-03-11 23:37:37 INFO  root:38 - URL : jdbc:postgresql://localhost:5432/chatting?
+2021-03-11 23:37:37 INFO  root:38 - URL : jdbc:postgresql://localhost:5432/chatting?
+2021-03-11 23:37:46 INFO  root:38 - URL : jdbc:postgresql://localhost:5432/chatting?
+2021-03-11 23:37:46 INFO  root:38 - URL : jdbc:postgresql://localhost:5432/chatting?
+2021-03-11 23:37:50 INFO  root:38 - URL : jdbc:postgresql://localhost:5432/chatting?
+2021-03-11 23:37:50 INFO  root:38 - URL : jdbc:postgresql://localhost:5432/chatting?
+2021-03-11 23:39:19 INFO  root:38 - URL : jdbc:postgresql://localhost:5432/chatting?
+2021-03-11 23:39:19 INFO  root:78 - User found in DB
+2021-03-11 23:39:36 INFO  root:38 - URL : jdbc:postgresql://localhost:5432/chatting?
+2021-03-11 23:39:36 INFO  root:38 - URL : jdbc:postgresql://localhost:5432/chatting?
+2021-03-11 23:39:43 INFO  root:38 - URL : jdbc:postgresql://localhost:5432/chatting?
+2021-03-11 23:39:43 INFO  root:38 - URL : jdbc:postgresql://localhost:5432/chatting?
+2021-03-11 23:39:59 INFO  root:38 - URL : jdbc:postgresql://localhost:5432/chatting?
+2021-03-11 23:39:59 INFO  root:38 - URL : jdbc:postgresql://localhost:5432/chatting?
+2021-03-11 23:40:04 INFO  root:38 - URL : jdbc:postgresql://localhost:5432/chatting?
+2021-03-11 23:40:04 INFO  root:38 - URL : jdbc:postgresql://localhost:5432/chatting?
+2021-03-11 23:46:43 INFO  root:38 - URL : jdbc:postgresql://localhost:5432/chatting?
+2021-03-11 23:46:43 INFO  root:78 - User found in DB
+2021-03-11 23:46:54 INFO  root:38 - URL : jdbc:postgresql://localhost:5432/chatting?
+2021-03-11 23:46:54 INFO  root:38 - URL : jdbc:postgresql://localhost:5432/chatting?
+2021-03-11 23:47:24 INFO  root:38 - URL : jdbc:postgresql://localhost:5432/chatting?
+2021-03-11 23:47:24 INFO  root:38 - URL : jdbc:postgresql://localhost:5432/chatting?
+2021-03-11 23:47:34 INFO  root:38 - URL : jdbc:postgresql://localhost:5432/chatting?
+2021-03-11 23:47:34 INFO  root:38 - URL : jdbc:postgresql://localhost:5432/chatting?
+2021-03-11 23:47:37 INFO  root:38 - URL : jdbc:postgresql://localhost:5432/chatting?
+2021-03-11 23:47:37 INFO  root:38 - URL : jdbc:postgresql://localhost:5432/chatting?
+2021-03-11 23:48:33 INFO  root:38 - URL : jdbc:postgresql://localhost:5432/chatting?
+2021-03-11 23:49:44 INFO  root:31 - Starting to create user
+2021-03-11 23:58:06 INFO  root:38 - URL : jdbc:postgresql://localhost:5432/chatting?
+2021-03-11 23:58:06 INFO  root:78 - User found in DB
+2021-03-11 23:58:28 INFO  root:38 - URL : jdbc:postgresql://localhost:5432/chatting?
+2021-03-11 23:58:28 INFO  root:38 - URL : jdbc:postgresql://localhost:5432/chatting?
+2021-03-11 23:58:39 INFO  root:38 - URL : jdbc:postgresql://localhost:5432/chatting?
+2021-03-11 23:58:39 INFO  root:38 - URL : jdbc:postgresql://localhost:5432/chatting?
+2021-03-11 23:58:48 INFO  root:38 - URL : jdbc:postgresql://localhost:5432/chatting?
+2021-03-11 23:58:48 INFO  root:38 - URL : jdbc:postgresql://localhost:5432/chatting?
+2021-03-11 23:58:53 INFO  root:38 - URL : jdbc:postgresql://localhost:5432/chatting?
+2021-03-11 23:58:53 INFO  root:38 - URL : jdbc:postgresql://localhost:5432/chatting?
+2021-03-11 23:59:01 INFO  root:38 - URL : jdbc:postgresql://localhost:5432/chatting?
+2021-03-11 23:59:01 INFO  root:38 - URL : jdbc:postgresql://localhost:5432/chatting?
+2021-03-11 23:59:02 INFO  root:38 - URL : jdbc:postgresql://localhost:5432/chatting?
+2021-03-11 23:59:03 INFO  root:38 - URL : jdbc:postgresql://localhost:5432/chatting?
+2021-03-11 23:59:53 INFO  root:38 - URL : jdbc:postgresql://localhost:5432/chatting?
+2021-03-11 23:59:53 INFO  root:78 - User found in DB
+2021-03-12 00:00:05 INFO  root:38 - URL : jdbc:postgresql://localhost:5432/chatting?
+2021-03-12 00:00:05 INFO  root:38 - URL : jdbc:postgresql://localhost:5432/chatting?
+2021-03-12 00:00:20 INFO  root:38 - URL : jdbc:postgresql://localhost:5432/chatting?
+2021-03-12 00:00:20 INFO  root:38 - URL : jdbc:postgresql://localhost:5432/chatting?
+2021-03-12 00:00:32 INFO  root:38 - URL : jdbc:postgresql://localhost:5432/chatting?
+2021-03-12 00:00:32 INFO  root:38 - URL : jdbc:postgresql://localhost:5432/chatting?
+2021-03-12 00:00:47 INFO  root:38 - URL : jdbc:postgresql://localhost:5432/chatting?
+2021-03-12 00:00:47 INFO  root:38 - URL : jdbc:postgresql://localhost:5432/chatting?
+2021-03-12 00:01:03 INFO  root:38 - URL : jdbc:postgresql://localhost:5432/chatting?
+2021-03-12 00:01:03 INFO  root:38 - URL : jdbc:postgresql://localhost:5432/chatting?
+2021-03-12 00:01:25 INFO  root:38 - URL : jdbc:postgresql://localhost:5432/chatting?
+2021-03-12 00:01:25 INFO  root:38 - URL : jdbc:postgresql://localhost:5432/chatting?
+2021-03-12 00:01:45 INFO  root:38 - URL : jdbc:postgresql://localhost:5432/chatting?
+2021-03-12 00:01:45 INFO  root:38 - URL : jdbc:postgresql://localhost:5432/chatting?
+2021-03-12 00:01:58 INFO  root:38 - URL : jdbc:postgresql://localhost:5432/chatting?
+2021-03-12 00:01:58 INFO  root:38 - URL : jdbc:postgresql://localhost:5432/chatting?
+2021-03-12 00:02:09 INFO  root:38 - URL : jdbc:postgresql://localhost:5432/chatting?
+2021-03-12 00:02:09 INFO  root:38 - URL : jdbc:postgresql://localhost:5432/chatting?
+2021-03-12 00:02:20 INFO  root:38 - URL : jdbc:postgresql://localhost:5432/chatting?
+2021-03-12 00:02:20 INFO  root:38 - URL : jdbc:postgresql://localhost:5432/chatting?
+2021-03-12 00:02:33 INFO  root:38 - URL : jdbc:postgresql://localhost:5432/chatting?
+2021-03-12 00:02:33 INFO  root:38 - URL : jdbc:postgresql://localhost:5432/chatting?
+2021-03-12 00:02:44 INFO  root:38 - URL : jdbc:postgresql://localhost:5432/chatting?
+2021-03-12 00:02:44 INFO  root:38 - URL : jdbc:postgresql://localhost:5432/chatting?
+2021-03-12 00:03:01 INFO  root:38 - URL : jdbc:postgresql://localhost:5432/chatting?
+2021-03-12 00:03:01 INFO  root:38 - URL : jdbc:postgresql://localhost:5432/chatting?
+2021-03-12 00:03:11 INFO  root:38 - URL : jdbc:postgresql://localhost:5432/chatting?
+2021-03-12 00:03:11 INFO  root:38 - URL : jdbc:postgresql://localhost:5432/chatting?
+2021-03-12 00:03:22 INFO  root:38 - URL : jdbc:postgresql://localhost:5432/chatting?
+2021-03-12 00:03:22 INFO  root:38 - URL : jdbc:postgresql://localhost:5432/chatting?
+2021-03-12 00:03:36 INFO  root:38 - URL : jdbc:postgresql://localhost:5432/chatting?
+2021-03-12 00:03:36 INFO  root:38 - URL : jdbc:postgresql://localhost:5432/chatting?
+2021-03-12 00:04:03 INFO  root:38 - URL : jdbc:postgresql://localhost:5432/chatting?
+2021-03-12 00:04:03 INFO  root:38 - URL : jdbc:postgresql://localhost:5432/chatting?
+2021-03-12 00:04:19 INFO  root:38 - URL : jdbc:postgresql://localhost:5432/chatting?
+2021-03-12 00:04:19 INFO  root:38 - URL : jdbc:postgresql://localhost:5432/chatting?
+2021-03-12 00:04:26 INFO  root:38 - URL : jdbc:postgresql://localhost:5432/chatting?
+2021-03-12 00:04:26 INFO  root:38 - URL : jdbc:postgresql://localhost:5432/chatting?
+2021-03-12 00:05:17 INFO  root:38 - URL : jdbc:postgresql://localhost:5432/chatting?
+2021-03-12 00:05:17 INFO  root:78 - User found in DB
+2021-03-12 00:05:46 INFO  root:38 - URL : jdbc:postgresql://localhost:5432/chatting?
+2021-03-12 00:05:46 INFO  root:78 - User found in DB
+2021-03-12 00:07:19 INFO  root:38 - URL : jdbc:postgresql://localhost:5432/chatting?
+2021-03-12 00:07:19 INFO  root:78 - User found in DB
+2021-03-12 00:09:53 INFO  root:38 - URL : jdbc:postgresql://localhost:5432/chatting?
+2021-03-12 00:09:53 INFO  root:78 - User found in DB
+2021-03-12 00:11:52 INFO  root:38 - URL : jdbc:postgresql://localhost:5432/chatting?
+2021-03-12 00:11:52 INFO  root:78 - User found in DB
+2021-03-12 00:18:16 INFO  root:38 - URL : jdbc:postgresql://localhost:5432/chatting?
+2021-03-12 00:18:16 INFO  root:78 - User found in DB
+2021-03-12 00:18:26 INFO  root:38 - URL : jdbc:postgresql://localhost:5432/chatting?
+2021-03-12 00:18:26 INFO  root:38 - URL : jdbc:postgresql://localhost:5432/chatting?
+2021-03-12 00:18:38 INFO  root:38 - URL : jdbc:postgresql://localhost:5432/chatting?
+2021-03-12 00:18:38 INFO  root:38 - URL : jdbc:postgresql://localhost:5432/chatting?
+2021-03-12 00:18:46 INFO  root:38 - URL : jdbc:postgresql://localhost:5432/chatting?
+2021-03-12 00:18:46 INFO  root:38 - URL : jdbc:postgresql://localhost:5432/chatting?
+2021-03-12 00:18:59 INFO  root:38 - URL : jdbc:postgresql://localhost:5432/chatting?
+2021-03-12 00:18:59 INFO  root:38 - URL : jdbc:postgresql://localhost:5432/chatting?
+2021-03-12 00:19:09 INFO  root:38 - URL : jdbc:postgresql://localhost:5432/chatting?
+2021-03-12 00:19:09 INFO  root:38 - URL : jdbc:postgresql://localhost:5432/chatting?
+2021-03-12 00:19:25 INFO  root:38 - URL : jdbc:postgresql://localhost:5432/chatting?
+2021-03-12 00:19:26 INFO  root:78 - User found in DB
+2021-03-12 00:20:30 INFO  root:38 - URL : jdbc:postgresql://localhost:5432/chatting?
+2021-03-12 00:20:30 INFO  root:78 - User found in DB
+2021-03-12 00:20:49 INFO  root:38 - URL : jdbc:postgresql://localhost:5432/chatting?
+2021-03-12 00:20:49 INFO  root:78 - User found in DB
+2021-03-12 00:20:59 INFO  root:38 - URL : jdbc:postgresql://localhost:5432/chatting?
+2021-03-12 00:20:59 INFO  root:38 - URL : jdbc:postgresql://localhost:5432/chatting?
+2021-03-12 00:21:14 INFO  root:38 - URL : jdbc:postgresql://localhost:5432/chatting?
+2021-03-12 00:21:14 INFO  root:38 - URL : jdbc:postgresql://localhost:5432/chatting?
+2021-03-12 00:21:18 INFO  root:38 - URL : jdbc:postgresql://localhost:5432/chatting?
+2021-03-12 00:21:18 INFO  root:38 - URL : jdbc:postgresql://localhost:5432/chatting?
+2021-03-12 00:24:26 INFO  root:38 - URL : jdbc:postgresql://localhost:5432/chatting?
+2021-03-12 00:24:26 INFO  root:78 - User found in DB
+2021-03-12 00:24:39 INFO  root:38 - URL : jdbc:postgresql://localhost:5432/chatting?
+2021-03-12 00:24:39 INFO  root:38 - URL : jdbc:postgresql://localhost:5432/chatting?
+2021-03-12 00:24:53 INFO  root:38 - URL : jdbc:postgresql://localhost:5432/chatting?
+2021-03-12 00:24:53 INFO  root:38 - URL : jdbc:postgresql://localhost:5432/chatting?
+2021-03-12 00:25:02 INFO  root:38 - URL : jdbc:postgresql://localhost:5432/chatting?
+2021-03-12 00:25:02 INFO  root:38 - URL : jdbc:postgresql://localhost:5432/chatting?
+2021-03-12 00:26:07 INFO  root:38 - URL : jdbc:postgresql://localhost:5432/chatting?
+2021-03-12 00:26:08 INFO  root:78 - User found in DB
+2021-03-12 00:26:21 INFO  root:38 - URL : jdbc:postgresql://localhost:5432/chatting?
+2021-03-12 00:26:21 INFO  root:38 - URL : jdbc:postgresql://localhost:5432/chatting?
+2021-03-12 00:26:29 INFO  root:38 - URL : jdbc:postgresql://localhost:5432/chatting?
+2021-03-12 00:26:29 INFO  root:38 - URL : jdbc:postgresql://localhost:5432/chatting?
+2021-03-12 00:26:33 INFO  root:38 - URL : jdbc:postgresql://localhost:5432/chatting?
+2021-03-12 00:26:33 INFO  root:38 - URL : jdbc:postgresql://localhost:5432/chatting?
+2021-03-12 00:28:48 INFO  root:38 - URL : jdbc:postgresql://localhost:5432/chatting?
+2021-03-12 00:28:48 INFO  root:38 - URL : jdbc:postgresql://localhost:5432/chatting?
+2021-03-12 00:32:43 INFO  root:38 - URL : jdbc:postgresql://localhost:5432/chatting?
+2021-03-12 00:32:43 INFO  root:38 - URL : jdbc:postgresql://localhost:5432/chatting?
+2021-03-12 08:54:00 INFO  root:38 - URL : jdbc:postgresql://localhost:5432/chatting?
+2021-03-12 08:54:22 INFO  root:38 - URL : jdbc:postgresql://localhost:5432/chatting?
+2021-03-12 08:54:22 INFO  root:78 - User found in DB
+2021-03-12 08:55:27 INFO  root:38 - URL : jdbc:postgresql://localhost:5432/chatting?
+2021-03-12 08:55:27 INFO  root:38 - URL : jdbc:postgresql://localhost:5432/chatting?
+2021-03-12 08:55:46 INFO  root:38 - URL : jdbc:postgresql://localhost:5432/chatting?
+2021-03-12 08:55:46 INFO  root:38 - URL : jdbc:postgresql://localhost:5432/chatting?
+2021-03-12 08:55:57 INFO  root:38 - URL : jdbc:postgresql://localhost:5432/chatting?
+2021-03-12 08:55:57 INFO  root:38 - URL : jdbc:postgresql://localhost:5432/chatting?
+2021-03-12 08:56:07 INFO  root:38 - URL : jdbc:postgresql://localhost:5432/chatting?
+2021-03-12 08:56:07 INFO  root:38 - URL : jdbc:postgresql://localhost:5432/chatting?
+2021-03-12 08:56:47 INFO  root:38 - URL : jdbc:postgresql://localhost:5432/chatting?
+2021-03-12 08:56:47 INFO  root:38 - URL : jdbc:postgresql://localhost:5432/chatting?
+2021-03-12 08:57:03 INFO  root:38 - URL : jdbc:postgresql://localhost:5432/chatting?
+2021-03-12 08:57:03 INFO  root:78 - User found in DB
+2021-03-12 08:57:17 INFO  root:38 - URL : jdbc:postgresql://localhost:5432/chatting?
+2021-03-12 08:57:17 INFO  root:38 - URL : jdbc:postgresql://localhost:5432/chatting?
+2021-03-12 08:57:26 INFO  root:38 - URL : jdbc:postgresql://localhost:5432/chatting?
+2021-03-12 08:57:26 INFO  root:38 - URL : jdbc:postgresql://localhost:5432/chatting?
+2021-03-12 08:57:32 INFO  root:38 - URL : jdbc:postgresql://localhost:5432/chatting?
+2021-03-12 08:57:32 INFO  root:38 - URL : jdbc:postgresql://localhost:5432/chatting?
